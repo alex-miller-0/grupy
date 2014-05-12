@@ -1,0 +1,52 @@
+&CONTROL
+wf_collect=.false.,
+calculation ='scf',
+restart_mode = 'from_scratch',
+prefix='PbTe',
+pseudo_dir='/work/02599/asmiller/pseudo/gbrv/pbe_GBRV/',
+tstress=.true.,
+tprnfor=.true.,
+etot_conv_thr=1.0D-4,
+forc_conv_thr=5.0D-8,
+/
+&SYSTEM
+input_dft='pbesol',
+ibrav=0,
+celldm(1)=12.0458861611d0,
+nat=2,
+ntyp=2,
+ecutwfc=60,
+ecutrho=600,
+occupations = 'fixed',
+/
+&ELECTRONS
+electron_maxstep=100,
+conv_thr = 1.0D-10,
+mixing_mode = 'plain',
+mixing_beta = 0.7d0,
+diagonalization = 'cg',
+diago_cg_maxiter = 100
+/
+&IONS
+ion_dynamics='bfgs',
+/
+&CELL
+cell_dynamics='bfgs',
+press=0.d0
+/
+ATOMIC_SPECIES
+Pb 207.2d0 pb_pbe_v1.uspp.F.UPF
+Te 127.6d0 te_pbe_v1.uspp.F.UPF
+
+CELL_PARAMETERS
+   0.000000000   0.500000000   0.500000000
+   0.500000000   0.000000000   0.500000000
+   0.500000000   0.500000000   0.000000000
+
+ATOMIC_POSITIONS crystal
+Pb 0.0d0 0.0d0 0.0d0
+Te 0.5d0 0.5d0 0.5d0
+
+K_POINTS automatic
+6 6 6 0 0 0 
+
