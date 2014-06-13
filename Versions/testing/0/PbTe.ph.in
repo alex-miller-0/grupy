@@ -1,0 +1,11 @@
+Dispersion
+&inputph
+tr2_ph=1.0d-16,
+epsil=.true.,
+ldisp=.true.,
+nq1=6, nq2=6, nq3=6,
+prefix='PbTe',
+fildyn='PbTe.dyn',
+/
+
+
