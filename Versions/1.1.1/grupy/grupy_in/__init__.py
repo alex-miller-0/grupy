@@ -10,7 +10,6 @@ class grupy_in:
 				  dir, # directories of calculations (input file)
 				  in_path,  # high symmetry path (input file)
 				  hs_points, # high symmetry points and labels
-				  sg, #space group (input file)
 				  prefix, # calculation name( get from calculations)
 				  nat,	# number of atoms (get from calculations)
 				  V, # volume array (get from calculations)
@@ -24,7 +23,6 @@ class grupy_in:
 		self.dir = dir
 		self.in_path = in_path
 		self.hs_points = hs_points
-		self.sg = sg
 		self.prefix = prefix
 		self.nat = nat
 		self.V = V

@@ -4,53 +4,30 @@ import json
 
 def GetInput():
 	dir = []
-	sg = ""
+	#sg = ""
 	bz_path = []
 	
 	cwd = os.getcwd()
 	
 	for file in os.listdir( cwd ) :
-	
 		if file.lower() == "grupy.in":
-			
 			f = open(file, 'r')
 			
 			for line in f:
-				
 				if "dir" in line.lower():
-				
 					s = line.split()
-					
-					for i in xrange( len( s )):
-					
+					for i in xrange( len( s )):				
 						if i>0 and s[i] != "=":
-							
 							dir.append( s[i] )
-				
-				if "space_group" in line.lower():
-				
-					s = line.split()
-					
-					for i in xrange( len( s )):
-					
-						if i>0 and s[i] != "=":
-						
-							sg = s[i]	
-		
+
 				if "path" in line.lower():
-				
 					s = line.split()
-					
 					if (len(s)-1)%4 != 0:
 						print "Error: check your BZ path and make sure all points are labelled"
 						return 0
-						
 					n = ((len(s)-1)/4)
-					
-					
-					for i in xrange( 0, n ):
-						
-						
+		
+					for i in xrange( 0, n ):				
 						label = s[ 1+ i*4]
 						one = float( s[2 + i*4] )
 						two = float( s[3 + i*4] )
@@ -58,14 +35,10 @@ def GetInput():
 						
 						c = [ label, one, two, three]
 						
-						bz_path.append(c)
-				
-		
-				
-								
+						bz_path.append(c)					
 			f.close()
 
-	return dir, sg, bz_path
+	return dir, bz_path
 
 
 ## WRITE THE OUT FILE IN JSON FORMAT

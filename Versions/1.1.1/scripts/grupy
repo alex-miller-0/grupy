@@ -10,7 +10,6 @@ sys.path.append( os.path.join( cwd, "..") )
 
 from grupy import *
 from grupy.qe import *
-from grupy.sym import *
 from optparse import OptionParser
 import subprocess as sub
 
@@ -21,7 +20,7 @@ import subprocess as sub
 ## From input file
 ##################
 
-dir, sg, in_path = GetInput()
+dir, in_path = GetInput()
 
 
 
@@ -48,7 +47,7 @@ parser.add_option("--bands", dest="bands", action="store_true")
 
 #### grupy_in object
 ####################
-Gin = grupy_in(dir, in_path, None , sg, None, None, None, None, None, None, None, None)
+Gin = grupy_in(dir, in_path, None , None, None, None, None, None, None, None, None)
 
 
 Gin.prefix = GetPrefix( Gin.dir )
