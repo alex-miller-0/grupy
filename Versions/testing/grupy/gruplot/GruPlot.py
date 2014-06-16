@@ -61,6 +61,7 @@ def GruPlot( prefix, num_modes, labels, q, data, mode_i, type):
 		for k in xrange( num_modes):
 			plt.plot ( q_data, y_data[k], '.')
 	
+	plt.grid()
 	plt.show()	
 		
 
