@@ -1,0 +1,2 @@
+&input
+ fildyn='PbSe.dyn', flfrc='PbSe.fc', zasr='crystal'/
