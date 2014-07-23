@@ -113,8 +113,6 @@ def GruCalc(Gin, q, Darray):
                     if proj[z] == max(proj):
                         if len(index) < 6:
                             index.append([proj[z], rel[z][0], rel[z][1]])
-                        else:
-                            print q[i]
 
         if i == 0:  # the first q point
 
