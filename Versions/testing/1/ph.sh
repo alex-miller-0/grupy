@@ -1,7 +1,7 @@
 #!/bin/bash
 #$ -V    #Inherit the submission environment
 #$ -cwd  # Start job in submission directory
-#$ -N pbse_disp     # Job Name
+#$ -N test     # Job Name
 #$ -j y  # Combine stderr and stdout
 #$ -o $JOB_NAME.o$JOB_ID         # Name of the output file (eg. myMPI.oJobID)
 #$ -pe 12way 24  # Requests 12 tasks/node, 24 cores total
@@ -11,7 +11,7 @@
 set -x   # Echo commands, use set echo with csh
 
 
-PREFIX="PbSe"
+PREFIX="PbS"
 
 # calculations
 
@@ -34,7 +34,7 @@ forc_conv_thr=5.0D-8,
 &SYSTEM
 input_dft='pbesol',
 ibrav=0,
-celldm(1)=11.56512393d0,
+celldm(1)=11.21741432d0,
 nat=2,
 ntyp=2,
 ecutwfc=50,
@@ -58,16 +58,16 @@ press=0.d0
 /
 ATOMIC_SPECIES
 Pb 207.2d0 pb_pbe_v1.uspp.F.UPF
-Se 78.96d0 se_pbe_v1.uspp.F.UPF
+S 32.06d0  s_pbe_v1.2.uspp.F.UPF
 
 CELL_PARAMETERS
-   0.000000000d0   0.498390724d0   0.498390724d0
-   0.498390724d0   0.000000000d0   0.498390724d0
-   0.498390724d0   0.498390724d0   0.000000000d0
+   0.000000000d0   0.496881597d0   0.496881597d0
+   0.496881597d0   0.000000000d0   0.496881597d0
+   0.496881597d0   0.496881597d0   0.000000000d0
 
 ATOMIC_POSITIONS crystal
 Pb 0.0d0 0.0d0 0.0d0
-Se 0.5d0 0.5d0 0.5d0
+S 0.5d0 0.5d0 0.5d0
 
 K_POINTS automatic
 12 12 12 0 0 0 
@@ -85,7 +85,7 @@ Dispersion
 tr2_ph=1.0d-16,
 epsil=.true.,
 ldisp=.true.,
-nq1=6, nq2=6, nq3=6,
+nq1=4, nq2=4, nq3=4,
 prefix='$PREFIX',
 fildyn='$PREFIX.dyn',
 /
@@ -95,5 +95,4 @@ EOF
 
 ibrun ph.x -npool 2 < $INFILE > $OUTFILE
 
-rm *.wf*
 
