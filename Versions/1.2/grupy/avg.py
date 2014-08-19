@@ -26,22 +26,18 @@ def avg(Gin,temps):
             gru.append(l['Gru'])
             omega.append(l['Omega_eq'])
 
-
     for t in range(len(temps)):
-        gru_avg = 0.0
+	gru_avg = 0.0
         CV = 0.0
-
         for i in xrange(len(gru)):
-            gru_avg += float(gru[i])* cv(omega[i],t[i])
-            CV += cv(omega[i],t[i])
-
+            gru_avg += float(gru[i])* cv(omega[i],temps[t])
+            CV += cv(omega[i],temps[t])
         gru_avg /= CV
-        ret[i]= {'temperature (K)':avg_gru, 'average Gruneisen': gru_avg, 'Cv':CV}
-
-    with open("%s.avg.gru"%Gin.prefix) as g:
-        for thing in ret:
-            g.writeline(thing)
-
+        ret[t]= {'temperature (K)':temps[t], 'average Gruneisen': gru_avg, 'Cv':CV}
+    
+    with open("%s.avg.gru"%Gin.prefix, 'w') as g:
+        for key in ret:
+            g.writelines("%s\n"%ret[key])
     return ret
 
 

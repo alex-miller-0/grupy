@@ -1,276 +1,282 @@
-{"q": "0", "Gru": "0.0", "Omega_eq": "1.47938202948e-08", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "0", "Gru": "0.0", "Omega_eq": "4.1869208958e-08", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "0", "Gru": "0.0", "Omega_eq": "4.82221162628e-08", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "0", "Gru": "0.0", "Omega_eq": "1.98475407258", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "0", "Gru": "0.0", "Omega_eq": "1.98475407258", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "0", "Gru": "15.8478990911", "Omega_eq": "4.01469966848", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "1", "Gru": "5.86058366296", "Omega_eq": "0.588624059369", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "1", "Gru": "5.86058366296", "Omega_eq": "0.588624059369", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "1", "Gru": "1.94418415947", "Omega_eq": "1.03005782302", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "1", "Gru": "6.17365479729", "Omega_eq": "2.93311256693", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "1", "Gru": "6.17365479729", "Omega_eq": "2.93311256693", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "1", "Gru": "7.28991921568", "Omega_eq": "4.89547353473", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "2", "Gru": "5.29144072583", "Omega_eq": "0.99005803989", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "2", "Gru": "5.29144072583", "Omega_eq": "0.99005803989", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "2", "Gru": "1.54640022236", "Omega_eq": "1.8483311703", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "2", "Gru": "2.95243067873", "Omega_eq": "4.37612548951", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "2", "Gru": "2.95243067873", "Omega_eq": "4.37612548951", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "2", "Gru": "0.15673158456", "Omega_eq": "6.37580922268", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "3", "Gru": "3.51580164741", "Omega_eq": "1.30766402227", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "3", "Gru": "3.51580164741", "Omega_eq": "1.30766402227", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "3", "Gru": "1.85572393471", "Omega_eq": "2.45649861515", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "3", "Gru": "2.03318791626", "Omega_eq": "5.34652155152", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "3", "Gru": "2.03318791626", "Omega_eq": "5.34652155152", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "3", "Gru": "1.75394243167", "Omega_eq": "7.19445409638", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "4", "Gru": "3.44762792127", "Omega_eq": "1.52184079117", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "4", "Gru": "3.44762792127", "Omega_eq": "1.52184079117", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "4", "Gru": "1.61787388821", "Omega_eq": "2.94472045324", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "4", "Gru": "1.81295187516", "Omega_eq": "5.7845893372", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "4", "Gru": "1.81295187516", "Omega_eq": "5.7845893372", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "4", "Gru": "1.53016899028", "Omega_eq": "7.16882541422", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "5", "Gru": "3.29028083485", "Omega_eq": "1.59895300169", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "5", "Gru": "3.29028083485", "Omega_eq": "1.59895300169", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "5", "Gru": "1.29489464838", "Omega_eq": "3.19209805816", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "5", "Gru": "1.80358529943", "Omega_eq": "5.89144363769", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "5", "Gru": "1.80358529943", "Omega_eq": "5.89144363769", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "5", "Gru": "1.14569944048", "Omega_eq": "6.96693752533", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "6", "Gru": "6.74929789982", "Omega_eq": "0.617695488052", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "6", "Gru": "6.74929789982", "Omega_eq": "0.617695488052", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "6", "Gru": "3.20428018048", "Omega_eq": "1.19882946319", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "6", "Gru": "7.24842514016", "Omega_eq": "2.78105974918", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "6", "Gru": "7.24842514016", "Omega_eq": "2.78105974918", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "6", "Gru": "5.69865390921", "Omega_eq": "5.25211916239", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "7", "Gru": "6.92363219482", "Omega_eq": "0.86902205138", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "7", "Gru": "6.65348825861", "Omega_eq": "0.910710036873", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "7", "Gru": "1.37012337216", "Omega_eq": "1.81538298584", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "7", "Gru": "4.26189836163", "Omega_eq": "3.59664753506", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "7", "Gru": "3.79693907934", "Omega_eq": "3.82545667405", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "7", "Gru": "0.937418392013", "Omega_eq": "6.21000206618", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "8", "Gru": "5.14145727232", "Omega_eq": "1.14266432162", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "8", "Gru": "4.8418738562", "Omega_eq": "1.24539345689", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "8", "Gru": "1.86645818775", "Omega_eq": "2.37458583906", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "8", "Gru": "2.47804140432", "Omega_eq": "4.5365030697", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "8", "Gru": "2.3133782515", "Omega_eq": "4.9904845657", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "8", "Gru": "1.37301043764", "Omega_eq": "6.92455099494", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "9", "Gru": "3.75740972353", "Omega_eq": "1.39015474978", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "9", "Gru": "3.73716835877", "Omega_eq": "1.48238712161", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "9", "Gru": "1.80917425738", "Omega_eq": "2.79975829662", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "9", "Gru": "1.89176007353", "Omega_eq": "5.2560409542", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "9", "Gru": "1.89385295789", "Omega_eq": "5.64724377252", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "9", "Gru": "1.61805689426", "Omega_eq": "7.0458392464", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "10", "Gru": "3.37639074703", "Omega_eq": "1.5564180552", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "10", "Gru": "3.35730563793", "Omega_eq": "1.56049273769", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "10", "Gru": "1.28957186044", "Omega_eq": "3.06908514803", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "10", "Gru": "1.85190039595", "Omega_eq": "5.71105235214", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "10", "Gru": "1.83031628251", "Omega_eq": "5.72546876636", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "10", "Gru": "1.14563733977", "Omega_eq": "6.88043665086", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "11", "Gru": "3.28822279967", "Omega_eq": "1.47746850189", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "11", "Gru": "3.38260362327", "Omega_eq": "1.59357319289", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "11", "Gru": "1.32677323044", "Omega_eq": "3.02366724345", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "11", "Gru": "1.91879181211", "Omega_eq": "5.34730968977", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "11", "Gru": "1.82413162473", "Omega_eq": "5.91388580645", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "11", "Gru": "1.27279028149", "Omega_eq": "6.95294005801", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "12", "Gru": "3.54569848172", "Omega_eq": "1.31796445901", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "12", "Gru": "3.65052580909", "Omega_eq": "1.45735597036", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "12", "Gru": "1.62688969228", "Omega_eq": "2.67817196701", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "12", "Gru": "2.44566986085", "Omega_eq": "4.80948605668", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "12", "Gru": "1.82912527112", "Omega_eq": "5.72576601603", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "12", "Gru": "1.75748687638", "Omega_eq": "7.09591225393", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "13", "Gru": "3.58835944715", "Omega_eq": "1.11714519467", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "13", "Gru": "4.18462602576", "Omega_eq": "1.17772041631", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "13", "Gru": "1.9465457333", "Omega_eq": "2.17832977925", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "13", "Gru": "3.86687093163", "Omega_eq": "4.13525592868", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "13", "Gru": "2.14354974421", "Omega_eq": "5.06939253606", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "13", "Gru": "1.00596556542", "Omega_eq": "6.77006533802", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "14", "Gru": "5.10315447184", "Omega_eq": "0.841723717219", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "14", "Gru": "2.96193805465", "Omega_eq": "0.856764975289", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "14", "Gru": "2.07785439338", "Omega_eq": "1.56707698809", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "14", "Gru": "5.95522722656", "Omega_eq": "3.36061915638", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "14", "Gru": "3.27944305858", "Omega_eq": "3.99552222545", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "14", "Gru": "2.41851869414", "Omega_eq": "5.84814679074", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "15", "Gru": "5.04829601859", "Omega_eq": "0.866466116723", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "15", "Gru": "5.04829601859", "Omega_eq": "0.866466116723", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "15", "Gru": "1.38102176729", "Omega_eq": "2.14474633207", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "15", "Gru": "4.70602648603", "Omega_eq": "3.19156102117", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "15", "Gru": "4.70602648603", "Omega_eq": "3.19156102117", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "15", "Gru": "0.0693625031436", "Omega_eq": "6.36314500775", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "16", "Gru": "5.77173816028", "Omega_eq": "1.05165649484", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "16", "Gru": "5.6358312523", "Omega_eq": "1.10645675641", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "16", "Gru": "2.07533887498", "Omega_eq": "2.43854761095", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "16", "Gru": "3.27838082093", "Omega_eq": "3.5582108739", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "16", "Gru": "3.02853463204", "Omega_eq": "3.83392918201", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "16", "Gru": "1.39698381596", "Omega_eq": "6.47030409736", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "17", "Gru": "4.15209777624", "Omega_eq": "1.28739627062", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "17", "Gru": "4.17405159023", "Omega_eq": "1.38994285899", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "17", "Gru": "2.10493528659", "Omega_eq": "2.62770662767", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "17", "Gru": "2.24697762709", "Omega_eq": "4.41856628344", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "17", "Gru": "2.15971937192", "Omega_eq": "4.89299493397", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "17", "Gru": "1.74807152371", "Omega_eq": "6.42889577732", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "18", "Gru": "3.58769650887", "Omega_eq": "1.47245399298", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "18", "Gru": "3.41572219185", "Omega_eq": "1.50669366529", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "18", "Gru": "1.38129515987", "Omega_eq": "2.75405084969", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "18", "Gru": "2.03466864455", "Omega_eq": "5.1781256336", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "18", "Gru": "2.04085817732", "Omega_eq": "5.22493342223", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "18", "Gru": "1.26494134024", "Omega_eq": "6.45113173165", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "19", "Gru": "2.59041003078", "Omega_eq": "1.48541373703", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "19", "Gru": "3.56362530286", "Omega_eq": "1.56368844752", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "19", "Gru": "1.013441885", "Omega_eq": "2.84884660736", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "19", "Gru": "2.2659522008", "Omega_eq": "4.57407554683", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "19", "Gru": "1.98427565168", "Omega_eq": "5.67239249971", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "19", "Gru": "1.02918557091", "Omega_eq": "6.60968567424", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "20", "Gru": "2.05054706657", "Omega_eq": "1.40780751712", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "20", "Gru": "3.63013181957", "Omega_eq": "1.53337030688", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "20", "Gru": "1.45652877296", "Omega_eq": "2.81789103843", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "20", "Gru": "3.25552983529", "Omega_eq": "3.91263239618", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "20", "Gru": "1.8346727274", "Omega_eq": "5.735609769", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "20", "Gru": "1.26639053888", "Omega_eq": "6.72299467716", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "21", "Gru": "2.05595916717", "Omega_eq": "1.27734100426", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "21", "Gru": "3.71229508763", "Omega_eq": "1.3853818032", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "21", "Gru": "2.00739827573", "Omega_eq": "2.56978956628", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "21", "Gru": "4.31087373085", "Omega_eq": "3.78630252352", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "21", "Gru": "1.81090159596", "Omega_eq": "5.52006440623", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "21", "Gru": "1.51706899368", "Omega_eq": "6.84550684351", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "22", "Gru": "4.88281096173", "Omega_eq": "1.10409538851", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "22", "Gru": "4.88281096173", "Omega_eq": "1.10409538851", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "22", "Gru": "2.86397116727", "Omega_eq": "2.46722443804", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "22", "Gru": "3.77092511027", "Omega_eq": "3.07109666466", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "22", "Gru": "3.77092511027", "Omega_eq": "3.07109666466", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "22", "Gru": "1.7916511809", "Omega_eq": "5.93091633274", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "23", "Gru": "4.05104462358", "Omega_eq": "1.24622439663", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "23", "Gru": "4.01528412188", "Omega_eq": "1.3013417404", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "23", "Gru": "2.77486255628", "Omega_eq": "2.36166358239", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "23", "Gru": "3.09970815181", "Omega_eq": "3.53702407185", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "23", "Gru": "2.88210842154", "Omega_eq": "3.76841290489", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "23", "Gru": "1.83591375719", "Omega_eq": "5.43276246944", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "24", "Gru": "3.67599583524", "Omega_eq": "1.37082043072", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "24", "Gru": "3.25960790743", "Omega_eq": "1.50513056168", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "24", "Gru": "1.84138157492", "Omega_eq": "2.30661873452", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "24", "Gru": "2.18781513671", "Omega_eq": "4.36346142296", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "24", "Gru": "2.65578392657", "Omega_eq": "4.41623499203", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "24", "Gru": "1.63383242575", "Omega_eq": "5.42853772578", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "25", "Gru": "3.70909348739", "Omega_eq": "1.46469748037", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "25", "Gru": "2.28797473289", "Omega_eq": "1.59669493251", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "25", "Gru": "0.972624662864", "Omega_eq": "2.42339454974", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "25", "Gru": "2.3604566207", "Omega_eq": "3.82913762925", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "25", "Gru": "2.4338892489", "Omega_eq": "5.12309197745", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "25", "Gru": "1.28173256185", "Omega_eq": "6.05900789485", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "26", "Gru": "3.77640853462", "Omega_eq": "1.52589264363", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "26", "Gru": "1.49128847146", "Omega_eq": "1.54945992222", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "26", "Gru": "1.04746426965", "Omega_eq": "2.6869730357", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "26", "Gru": "3.24670609287", "Omega_eq": "3.45080163629", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "26", "Gru": "2.09829771279", "Omega_eq": "5.53267366253", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "26", "Gru": "1.01015960884", "Omega_eq": "6.40815091451", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "27", "Gru": "3.37337744331", "Omega_eq": "1.23964210018", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "27", "Gru": "3.37337744331", "Omega_eq": "1.23964210018", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "27", "Gru": "3.34979441005", "Omega_eq": "2.07147978928", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "27", "Gru": "3.98756208519", "Omega_eq": "3.10750046381", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "27", "Gru": "3.98756208519", "Omega_eq": "3.10750046381", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "27", "Gru": "1.49684543381", "Omega_eq": "4.38348952064", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "28", "Gru": "2.92422697404", "Omega_eq": "1.27073067915", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "28", "Gru": "2.56325156344", "Omega_eq": "1.40685960186", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "28", "Gru": "3.3720931474", "Omega_eq": "1.86933851463", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "28", "Gru": "3.80118251899", "Omega_eq": "3.49513050169", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "28", "Gru": "1.76723577679", "Omega_eq": "3.49771195239", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "28", "Gru": "2.40615467576", "Omega_eq": "3.94563028127", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "29", "Gru": "3.30964907893", "Omega_eq": "1.35259264472", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "29", "Gru": "3.48421444892", "Omega_eq": "1.70379905539", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "29", "Gru": "1.46523404318", "Omega_eq": "1.9007740574", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "29", "Gru": "1.42603589566", "Omega_eq": "3.43909207689", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "29", "Gru": "3.10954703656", "Omega_eq": "4.3307288664", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "29", "Gru": "2.01404550204", "Omega_eq": "5.09584420735", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "30", "Gru": "1.88575639917", "Omega_eq": "1.22052457651", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "30", "Gru": "1.88575639917", "Omega_eq": "1.22052457651", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "30", "Gru": "5.09274421663", "Omega_eq": "1.73238573461", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "30", "Gru": "4.75157126148", "Omega_eq": "3.0293157474", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "30", "Gru": "4.75157126148", "Omega_eq": "3.0293157474", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "30", "Gru": "0.350265828364", "Omega_eq": "3.10825494628", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "31", "Gru": "5.45541988726", "Omega_eq": "1.07474347012", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "31", "Gru": "6.25951073438", "Omega_eq": "1.076001265", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "31", "Gru": "1.68632486388", "Omega_eq": "2.24784315416", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "31", "Gru": "4.15074860342", "Omega_eq": "3.63645170408", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "31", "Gru": "2.40278459304", "Omega_eq": "4.50982277456", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "31", "Gru": "0.831164780618", "Omega_eq": "6.63395675244", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "32", "Gru": "4.17966541157", "Omega_eq": "1.27561069211", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "32", "Gru": "3.88037131184", "Omega_eq": "1.35667540647", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "32", "Gru": "1.96669396221", "Omega_eq": "2.60726382149", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "32", "Gru": "3.14933206522", "Omega_eq": "4.03969641092", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "32", "Gru": "1.90917669316", "Omega_eq": "5.28886673105", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "32", "Gru": "1.62071897536", "Omega_eq": "6.76424737328", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "33", "Gru": "3.00418284757", "Omega_eq": "1.4278165756", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "33", "Gru": "3.46942806422", "Omega_eq": "1.5312616017", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "33", "Gru": "1.38920218832", "Omega_eq": "2.83553612359", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "33", "Gru": "2.33899262191", "Omega_eq": "4.68517152374", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "33", "Gru": "1.90776901698", "Omega_eq": "5.6570381326", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "33", "Gru": "1.34764092772", "Omega_eq": "6.70782590994", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "34", "Gru": "2.47709224955", "Omega_eq": "1.49290119026", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "34", "Gru": "3.32377965259", "Omega_eq": "1.56742235237", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "34", "Gru": "1.0081562301", "Omega_eq": "2.91796368984", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "34", "Gru": "2.088355823", "Omega_eq": "5.1649055096", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "34", "Gru": "1.98275767759", "Omega_eq": "5.52714209187", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "34", "Gru": "1.07702234677", "Omega_eq": "6.7001722873", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "35", "Gru": "3.5968949561", "Omega_eq": "1.23178362929", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "35", "Gru": "3.44491493314", "Omega_eq": "1.28478665535", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "35", "Gru": "2.51373892123", "Omega_eq": "2.53059809461", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "35", "Gru": "3.84694314328", "Omega_eq": "3.49622926094", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "35", "Gru": "2.32223809072", "Omega_eq": "4.41697217738", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "35", "Gru": "1.78568347787", "Omega_eq": "6.17175170871", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "36", "Gru": "3.31059591021", "Omega_eq": "1.41229522867", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "36", "Gru": "2.93521788706", "Omega_eq": "1.46922159325", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "36", "Gru": "1.78745660157", "Omega_eq": "2.52835322284", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "36", "Gru": "3.11723236514", "Omega_eq": "3.99637831474", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "36", "Gru": "2.14042913813", "Omega_eq": "5.00273007763", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "36", "Gru": "1.49304905017", "Omega_eq": "5.99789164688", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "37", "Gru": "2.82365080766", "Omega_eq": "1.49982789008", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "37", "Gru": "2.69485505802", "Omega_eq": "1.53333437353", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "37", "Gru": "1.00485797642", "Omega_eq": "2.57364020005", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "37", "Gru": "2.47887768256", "Omega_eq": "4.44288998178", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "37", "Gru": "2.36627245175", "Omega_eq": "4.82608774396", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "37", "Gru": "1.25113516628", "Omega_eq": "6.30853807871", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "38", "Gru": "2.98548687103", "Omega_eq": "1.51907415172", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "38", "Gru": "2.71282655976", "Omega_eq": "1.53672803448", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "38", "Gru": "1.05301002985", "Omega_eq": "2.66250503804", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "38", "Gru": "2.93886714438", "Omega_eq": "3.87183018795", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "38", "Gru": "2.14975424542", "Omega_eq": "5.25805707428", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "38", "Gru": "1.10733497257", "Omega_eq": "6.42954885529", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "39", "Gru": "2.90124624407", "Omega_eq": "1.44826462449", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "39", "Gru": "3.70303978201", "Omega_eq": "1.4777921874", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "39", "Gru": "1.68318729459", "Omega_eq": "2.71648703239", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "39", "Gru": "3.57162989502", "Omega_eq": "3.61626084225", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "39", "Gru": "1.91984238821", "Omega_eq": "5.48426466321", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "39", "Gru": "1.29414290338", "Omega_eq": "6.47686345891", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "40", "Gru": "2.84546675144", "Omega_eq": "1.36070165734", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "40", "Gru": "2.84945803109", "Omega_eq": "1.41269301773", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "40", "Gru": "2.39648837901", "Omega_eq": "2.1560886571", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "40", "Gru": "3.80639991778", "Omega_eq": "3.52646569178", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "40", "Gru": "2.37215073896", "Omega_eq": "4.16226750388", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "40", "Gru": "1.7515095153", "Omega_eq": "4.90250567912", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "41", "Gru": "3.41989398167", "Omega_eq": "1.46103265326", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "41", "Gru": "2.94978994472", "Omega_eq": "1.59952925388", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "41", "Gru": "1.74482878766", "Omega_eq": "2.08144845784", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "41", "Gru": "2.14622157711", "Omega_eq": "3.71914105058", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "41", "Gru": "3.23953160991", "Omega_eq": "3.98990458532", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "41", "Gru": "1.73880929048", "Omega_eq": "5.51218298147", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "42", "Gru": "3.89179090808", "Omega_eq": "1.48693638286", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "42", "Gru": "2.83909083092", "Omega_eq": "1.63835002649", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "42", "Gru": "1.35046870878", "Omega_eq": "2.3282224802", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "42", "Gru": "2.61272419398", "Omega_eq": "3.47857479573", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "42", "Gru": "2.62240261455", "Omega_eq": "4.61432138151", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "42", "Gru": "1.35471678907", "Omega_eq": "6.10908606116", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "43", "Gru": "3.7501689112", "Omega_eq": "1.40963154375", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "43", "Gru": "2.58987668371", "Omega_eq": "1.52542079838", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "43", "Gru": "4.03476165141", "Omega_eq": "1.71995615745", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "43", "Gru": "0.833143168509", "Omega_eq": "3.2927653894", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "43", "Gru": "4.00788174853", "Omega_eq": "3.45702402136", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "43", "Gru": "2.44393011403", "Omega_eq": "4.48170141363", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "44", "Gru": "3.66776565268", "Omega_eq": "1.5125960366", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "44", "Gru": "3.18308562806", "Omega_eq": "1.57117653758", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "44", "Gru": "1.50042318265", "Omega_eq": "2.38243889604", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "44", "Gru": "3.42627138135", "Omega_eq": "3.64980610478", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "44", "Gru": "2.29035504073", "Omega_eq": "4.47358036313", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "44", "Gru": "1.3478165831", "Omega_eq": "6.06526085505", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
-{"q": "45", "Gru": "3.90085021368", "Omega_eq": "1.56580377652", "Volume": null, "prefix": "PbS", "Mode_Index": "0"}
-{"q": "45", "Gru": "3.48481595262", "Omega_eq": "1.58353258389", "Volume": null, "prefix": "PbS", "Mode_Index": "1"}
-{"q": "45", "Gru": "1.62956416066", "Omega_eq": "2.32406553448", "Volume": null, "prefix": "PbS", "Mode_Index": "2"}
-{"q": "45", "Gru": "2.87966866348", "Omega_eq": "3.7503789094", "Volume": null, "prefix": "PbS", "Mode_Index": "3"}
-{"q": "45", "Gru": "2.75231699163", "Omega_eq": "3.9202777028", "Volume": null, "prefix": "PbS", "Mode_Index": "4"}
-{"q": "45", "Gru": "1.39662710395", "Omega_eq": "6.16882339266", "Volume": null, "prefix": "PbS", "Mode_Index": "5"}
+{"num_modes": "6", "prefix": "PbS", "label_q": 0.0, "label": "K"}
+{"num_modes": "6", "prefix": "PbS", "label_q": 1.0606601717798212, "label": "G"}
+{"num_modes": "6", "prefix": "PbS", "label_q": 2.060660171779821, "label": "X"}
+{"num_modes": "6", "prefix": "PbS", "label_q": 2.560660171779821, "label": "W"}
+{"num_modes": "6", "prefix": "PbS", "label_q": 3.678694160529716, "label": "G"}
+{"num_modes": "6", "prefix": "PbS", "label_q": 4.544719564314154, "label": "L"}
+{"Volume": null, "q": "0.0", "prefix": "PbS", "Gru": "0.0", "Mode_Index": "0"}
+{"Volume": null, "q": "0.0", "prefix": "PbS", "Gru": "0.0", "Mode_Index": "1"}
+{"Volume": null, "q": "0.0", "prefix": "PbS", "Gru": "0.0", "Mode_Index": "2"}
+{"Volume": null, "q": "0.0", "prefix": "PbS", "Gru": "0.0", "Mode_Index": "3"}
+{"Volume": null, "q": "0.0", "prefix": "PbS", "Gru": "0.0", "Mode_Index": "4"}
+{"Volume": null, "q": "0.0", "prefix": "PbS", "Gru": "15.8478990911", "Mode_Index": "5"}
+{"Volume": null, "q": "0.0106066017178", "prefix": "PbS", "Gru": "5.86058366296", "Mode_Index": "0"}
+{"Volume": null, "q": "0.0106066017178", "prefix": "PbS", "Gru": "5.86058366296", "Mode_Index": "1"}
+{"Volume": null, "q": "0.0106066017178", "prefix": "PbS", "Gru": "1.94418415947", "Mode_Index": "2"}
+{"Volume": null, "q": "0.0106066017178", "prefix": "PbS", "Gru": "6.17365479729", "Mode_Index": "3"}
+{"Volume": null, "q": "0.0106066017178", "prefix": "PbS", "Gru": "6.17365479729", "Mode_Index": "4"}
+{"Volume": null, "q": "0.0106066017178", "prefix": "PbS", "Gru": "7.28991921568", "Mode_Index": "5"}
+{"Volume": null, "q": "0.0212132034356", "prefix": "PbS", "Gru": "5.29144072583", "Mode_Index": "0"}
+{"Volume": null, "q": "0.0212132034356", "prefix": "PbS", "Gru": "5.29144072583", "Mode_Index": "1"}
+{"Volume": null, "q": "0.0212132034356", "prefix": "PbS", "Gru": "1.54640022236", "Mode_Index": "2"}
+{"Volume": null, "q": "0.0212132034356", "prefix": "PbS", "Gru": "2.95243067873", "Mode_Index": "3"}
+{"Volume": null, "q": "0.0212132034356", "prefix": "PbS", "Gru": "2.95243067873", "Mode_Index": "4"}
+{"Volume": null, "q": "0.0212132034356", "prefix": "PbS", "Gru": "0.15673158456", "Mode_Index": "5"}
+{"Volume": null, "q": "0.0318198051534", "prefix": "PbS", "Gru": "3.51580164741", "Mode_Index": "0"}
+{"Volume": null, "q": "0.0318198051534", "prefix": "PbS", "Gru": "3.51580164741", "Mode_Index": "1"}
+{"Volume": null, "q": "0.0318198051534", "prefix": "PbS", "Gru": "1.85572393471", "Mode_Index": "2"}
+{"Volume": null, "q": "0.0318198051534", "prefix": "PbS", "Gru": "2.03318791626", "Mode_Index": "3"}
+{"Volume": null, "q": "0.0318198051534", "prefix": "PbS", "Gru": "2.03318791626", "Mode_Index": "4"}
+{"Volume": null, "q": "0.0318198051534", "prefix": "PbS", "Gru": "1.75394243167", "Mode_Index": "5"}
+{"Volume": null, "q": "0.0424264068712", "prefix": "PbS", "Gru": "3.44762792127", "Mode_Index": "0"}
+{"Volume": null, "q": "0.0424264068712", "prefix": "PbS", "Gru": "3.44762792127", "Mode_Index": "1"}
+{"Volume": null, "q": "0.0424264068712", "prefix": "PbS", "Gru": "1.61787388821", "Mode_Index": "2"}
+{"Volume": null, "q": "0.0424264068712", "prefix": "PbS", "Gru": "1.81295187516", "Mode_Index": "3"}
+{"Volume": null, "q": "0.0424264068712", "prefix": "PbS", "Gru": "1.81295187516", "Mode_Index": "4"}
+{"Volume": null, "q": "0.0424264068712", "prefix": "PbS", "Gru": "1.53016899028", "Mode_Index": "5"}
+{"Volume": null, "q": "0.053033008589", "prefix": "PbS", "Gru": "3.29028083485", "Mode_Index": "0"}
+{"Volume": null, "q": "0.053033008589", "prefix": "PbS", "Gru": "3.29028083485", "Mode_Index": "1"}
+{"Volume": null, "q": "0.053033008589", "prefix": "PbS", "Gru": "1.29489464838", "Mode_Index": "2"}
+{"Volume": null, "q": "0.053033008589", "prefix": "PbS", "Gru": "1.80358529943", "Mode_Index": "3"}
+{"Volume": null, "q": "0.053033008589", "prefix": "PbS", "Gru": "1.80358529943", "Mode_Index": "4"}
+{"Volume": null, "q": "0.053033008589", "prefix": "PbS", "Gru": "1.14569944048", "Mode_Index": "5"}
+{"Volume": null, "q": "0.0636396103068", "prefix": "PbS", "Gru": "6.74929789982", "Mode_Index": "0"}
+{"Volume": null, "q": "0.0636396103068", "prefix": "PbS", "Gru": "6.74929789982", "Mode_Index": "1"}
+{"Volume": null, "q": "0.0636396103068", "prefix": "PbS", "Gru": "3.20428018048", "Mode_Index": "2"}
+{"Volume": null, "q": "0.0636396103068", "prefix": "PbS", "Gru": "7.24842514016", "Mode_Index": "3"}
+{"Volume": null, "q": "0.0636396103068", "prefix": "PbS", "Gru": "7.24842514016", "Mode_Index": "4"}
+{"Volume": null, "q": "0.0636396103068", "prefix": "PbS", "Gru": "5.69865390921", "Mode_Index": "5"}
+{"Volume": null, "q": "0.0742462120246", "prefix": "PbS", "Gru": "6.92363219482", "Mode_Index": "0"}
+{"Volume": null, "q": "0.0742462120246", "prefix": "PbS", "Gru": "6.65348825861", "Mode_Index": "1"}
+{"Volume": null, "q": "0.0742462120246", "prefix": "PbS", "Gru": "1.37012337216", "Mode_Index": "2"}
+{"Volume": null, "q": "0.0742462120246", "prefix": "PbS", "Gru": "4.26189836163", "Mode_Index": "3"}
+{"Volume": null, "q": "0.0742462120246", "prefix": "PbS", "Gru": "3.79693907934", "Mode_Index": "4"}
+{"Volume": null, "q": "0.0742462120246", "prefix": "PbS", "Gru": "0.937418392013", "Mode_Index": "5"}
+{"Volume": null, "q": "0.0848528137424", "prefix": "PbS", "Gru": "5.14145727232", "Mode_Index": "0"}
+{"Volume": null, "q": "0.0848528137424", "prefix": "PbS", "Gru": "4.8418738562", "Mode_Index": "1"}
+{"Volume": null, "q": "0.0848528137424", "prefix": "PbS", "Gru": "1.86645818775", "Mode_Index": "2"}
+{"Volume": null, "q": "0.0848528137424", "prefix": "PbS", "Gru": "2.47804140432", "Mode_Index": "3"}
+{"Volume": null, "q": "0.0848528137424", "prefix": "PbS", "Gru": "2.3133782515", "Mode_Index": "4"}
+{"Volume": null, "q": "0.0848528137424", "prefix": "PbS", "Gru": "1.37301043764", "Mode_Index": "5"}
+{"Volume": null, "q": "0.0954594154602", "prefix": "PbS", "Gru": "3.75740972353", "Mode_Index": "0"}
+{"Volume": null, "q": "0.0954594154602", "prefix": "PbS", "Gru": "3.73716835877", "Mode_Index": "1"}
+{"Volume": null, "q": "0.0954594154602", "prefix": "PbS", "Gru": "1.80917425738", "Mode_Index": "2"}
+{"Volume": null, "q": "0.0954594154602", "prefix": "PbS", "Gru": "1.89176007353", "Mode_Index": "3"}
+{"Volume": null, "q": "0.0954594154602", "prefix": "PbS", "Gru": "1.89385295789", "Mode_Index": "4"}
+{"Volume": null, "q": "0.0954594154602", "prefix": "PbS", "Gru": "1.61805689426", "Mode_Index": "5"}
+{"Volume": null, "q": "0.106066017178", "prefix": "PbS", "Gru": "3.37639074703", "Mode_Index": "0"}
+{"Volume": null, "q": "0.106066017178", "prefix": "PbS", "Gru": "3.35730563793", "Mode_Index": "1"}
+{"Volume": null, "q": "0.106066017178", "prefix": "PbS", "Gru": "1.28957186044", "Mode_Index": "2"}
+{"Volume": null, "q": "0.106066017178", "prefix": "PbS", "Gru": "1.85190039595", "Mode_Index": "3"}
+{"Volume": null, "q": "0.106066017178", "prefix": "PbS", "Gru": "1.83031628251", "Mode_Index": "4"}
+{"Volume": null, "q": "0.106066017178", "prefix": "PbS", "Gru": "1.14563733977", "Mode_Index": "5"}
+{"Volume": null, "q": "0.116672618896", "prefix": "PbS", "Gru": "3.28822279967", "Mode_Index": "0"}
+{"Volume": null, "q": "0.116672618896", "prefix": "PbS", "Gru": "3.38260362327", "Mode_Index": "1"}
+{"Volume": null, "q": "0.116672618896", "prefix": "PbS", "Gru": "1.32677323044", "Mode_Index": "2"}
+{"Volume": null, "q": "0.116672618896", "prefix": "PbS", "Gru": "1.91879181211", "Mode_Index": "3"}
+{"Volume": null, "q": "0.116672618896", "prefix": "PbS", "Gru": "1.82413162473", "Mode_Index": "4"}
+{"Volume": null, "q": "0.116672618896", "prefix": "PbS", "Gru": "1.27279028149", "Mode_Index": "5"}
+{"Volume": null, "q": "0.127279220614", "prefix": "PbS", "Gru": "3.54569848172", "Mode_Index": "0"}
+{"Volume": null, "q": "0.127279220614", "prefix": "PbS", "Gru": "3.65052580909", "Mode_Index": "1"}
+{"Volume": null, "q": "0.127279220614", "prefix": "PbS", "Gru": "1.62688969228", "Mode_Index": "2"}
+{"Volume": null, "q": "0.127279220614", "prefix": "PbS", "Gru": "2.44566986085", "Mode_Index": "3"}
+{"Volume": null, "q": "0.127279220614", "prefix": "PbS", "Gru": "1.82912527112", "Mode_Index": "4"}
+{"Volume": null, "q": "0.127279220614", "prefix": "PbS", "Gru": "1.75748687638", "Mode_Index": "5"}
+{"Volume": null, "q": "0.137885822331", "prefix": "PbS", "Gru": "3.58835944715", "Mode_Index": "0"}
+{"Volume": null, "q": "0.137885822331", "prefix": "PbS", "Gru": "4.18462602576", "Mode_Index": "1"}
+{"Volume": null, "q": "0.137885822331", "prefix": "PbS", "Gru": "1.9465457333", "Mode_Index": "2"}
+{"Volume": null, "q": "0.137885822331", "prefix": "PbS", "Gru": "3.86687093163", "Mode_Index": "3"}
+{"Volume": null, "q": "0.137885822331", "prefix": "PbS", "Gru": "2.14354974421", "Mode_Index": "4"}
+{"Volume": null, "q": "0.137885822331", "prefix": "PbS", "Gru": "1.00596556542", "Mode_Index": "5"}
+{"Volume": null, "q": "0.148492424049", "prefix": "PbS", "Gru": "5.10315447184", "Mode_Index": "0"}
+{"Volume": null, "q": "0.148492424049", "prefix": "PbS", "Gru": "2.96193805465", "Mode_Index": "1"}
+{"Volume": null, "q": "0.148492424049", "prefix": "PbS", "Gru": "2.07785439338", "Mode_Index": "2"}
+{"Volume": null, "q": "0.148492424049", "prefix": "PbS", "Gru": "5.95522722656", "Mode_Index": "3"}
+{"Volume": null, "q": "0.148492424049", "prefix": "PbS", "Gru": "3.27944305858", "Mode_Index": "4"}
+{"Volume": null, "q": "0.148492424049", "prefix": "PbS", "Gru": "2.41851869414", "Mode_Index": "5"}
+{"Volume": null, "q": "0.159099025767", "prefix": "PbS", "Gru": "5.04829601859", "Mode_Index": "0"}
+{"Volume": null, "q": "0.159099025767", "prefix": "PbS", "Gru": "5.04829601859", "Mode_Index": "1"}
+{"Volume": null, "q": "0.159099025767", "prefix": "PbS", "Gru": "1.38102176729", "Mode_Index": "2"}
+{"Volume": null, "q": "0.159099025767", "prefix": "PbS", "Gru": "4.70602648603", "Mode_Index": "3"}
+{"Volume": null, "q": "0.159099025767", "prefix": "PbS", "Gru": "4.70602648603", "Mode_Index": "4"}
+{"Volume": null, "q": "0.159099025767", "prefix": "PbS", "Gru": "0.0693625031436", "Mode_Index": "5"}
+{"Volume": null, "q": "0.169705627485", "prefix": "PbS", "Gru": "5.77173816028", "Mode_Index": "0"}
+{"Volume": null, "q": "0.169705627485", "prefix": "PbS", "Gru": "5.6358312523", "Mode_Index": "1"}
+{"Volume": null, "q": "0.169705627485", "prefix": "PbS", "Gru": "2.07533887498", "Mode_Index": "2"}
+{"Volume": null, "q": "0.169705627485", "prefix": "PbS", "Gru": "3.27838082093", "Mode_Index": "3"}
+{"Volume": null, "q": "0.169705627485", "prefix": "PbS", "Gru": "3.02853463204", "Mode_Index": "4"}
+{"Volume": null, "q": "0.169705627485", "prefix": "PbS", "Gru": "1.39698381596", "Mode_Index": "5"}
+{"Volume": null, "q": "0.180312229203", "prefix": "PbS", "Gru": "4.15209777624", "Mode_Index": "0"}
+{"Volume": null, "q": "0.180312229203", "prefix": "PbS", "Gru": "4.17405159023", "Mode_Index": "1"}
+{"Volume": null, "q": "0.180312229203", "prefix": "PbS", "Gru": "2.10493528659", "Mode_Index": "2"}
+{"Volume": null, "q": "0.180312229203", "prefix": "PbS", "Gru": "2.24697762709", "Mode_Index": "3"}
+{"Volume": null, "q": "0.180312229203", "prefix": "PbS", "Gru": "2.15971937192", "Mode_Index": "4"}
+{"Volume": null, "q": "0.180312229203", "prefix": "PbS", "Gru": "1.74807152371", "Mode_Index": "5"}
+{"Volume": null, "q": "0.19091883092", "prefix": "PbS", "Gru": "3.58769650887", "Mode_Index": "0"}
+{"Volume": null, "q": "0.19091883092", "prefix": "PbS", "Gru": "3.41572219185", "Mode_Index": "1"}
+{"Volume": null, "q": "0.19091883092", "prefix": "PbS", "Gru": "1.38129515987", "Mode_Index": "2"}
+{"Volume": null, "q": "0.19091883092", "prefix": "PbS", "Gru": "2.03466864455", "Mode_Index": "3"}
+{"Volume": null, "q": "0.19091883092", "prefix": "PbS", "Gru": "2.04085817732", "Mode_Index": "4"}
+{"Volume": null, "q": "0.19091883092", "prefix": "PbS", "Gru": "1.26494134024", "Mode_Index": "5"}
+{"Volume": null, "q": "0.201525432638", "prefix": "PbS", "Gru": "2.59041003078", "Mode_Index": "0"}
+{"Volume": null, "q": "0.201525432638", "prefix": "PbS", "Gru": "3.56362530286", "Mode_Index": "1"}
+{"Volume": null, "q": "0.201525432638", "prefix": "PbS", "Gru": "1.013441885", "Mode_Index": "2"}
+{"Volume": null, "q": "0.201525432638", "prefix": "PbS", "Gru": "2.2659522008", "Mode_Index": "3"}
+{"Volume": null, "q": "0.201525432638", "prefix": "PbS", "Gru": "1.98427565168", "Mode_Index": "4"}
+{"Volume": null, "q": "0.201525432638", "prefix": "PbS", "Gru": "1.02918557091", "Mode_Index": "5"}
+{"Volume": null, "q": "0.212132034356", "prefix": "PbS", "Gru": "2.05054706657", "Mode_Index": "0"}
+{"Volume": null, "q": "0.212132034356", "prefix": "PbS", "Gru": "3.63013181957", "Mode_Index": "1"}
+{"Volume": null, "q": "0.212132034356", "prefix": "PbS", "Gru": "1.45652877296", "Mode_Index": "2"}
+{"Volume": null, "q": "0.212132034356", "prefix": "PbS", "Gru": "3.25552983529", "Mode_Index": "3"}
+{"Volume": null, "q": "0.212132034356", "prefix": "PbS", "Gru": "1.8346727274", "Mode_Index": "4"}
+{"Volume": null, "q": "0.212132034356", "prefix": "PbS", "Gru": "1.26639053888", "Mode_Index": "5"}
+{"Volume": null, "q": "0.222738636074", "prefix": "PbS", "Gru": "2.05595916717", "Mode_Index": "0"}
+{"Volume": null, "q": "0.222738636074", "prefix": "PbS", "Gru": "3.71229508763", "Mode_Index": "1"}
+{"Volume": null, "q": "0.222738636074", "prefix": "PbS", "Gru": "2.00739827573", "Mode_Index": "2"}
+{"Volume": null, "q": "0.222738636074", "prefix": "PbS", "Gru": "4.31087373085", "Mode_Index": "3"}
+{"Volume": null, "q": "0.222738636074", "prefix": "PbS", "Gru": "1.81090159596", "Mode_Index": "4"}
+{"Volume": null, "q": "0.222738636074", "prefix": "PbS", "Gru": "1.51706899368", "Mode_Index": "5"}
+{"Volume": null, "q": "0.233345237792", "prefix": "PbS", "Gru": "4.88281096173", "Mode_Index": "0"}
+{"Volume": null, "q": "0.233345237792", "prefix": "PbS", "Gru": "4.88281096173", "Mode_Index": "1"}
+{"Volume": null, "q": "0.233345237792", "prefix": "PbS", "Gru": "2.86397116727", "Mode_Index": "2"}
+{"Volume": null, "q": "0.233345237792", "prefix": "PbS", "Gru": "3.77092511027", "Mode_Index": "3"}
+{"Volume": null, "q": "0.233345237792", "prefix": "PbS", "Gru": "3.77092511027", "Mode_Index": "4"}
+{"Volume": null, "q": "0.233345237792", "prefix": "PbS", "Gru": "1.7916511809", "Mode_Index": "5"}
+{"Volume": null, "q": "0.243951839509", "prefix": "PbS", "Gru": "4.05104462358", "Mode_Index": "0"}
+{"Volume": null, "q": "0.243951839509", "prefix": "PbS", "Gru": "4.01528412188", "Mode_Index": "1"}
+{"Volume": null, "q": "0.243951839509", "prefix": "PbS", "Gru": "2.77486255628", "Mode_Index": "2"}
+{"Volume": null, "q": "0.243951839509", "prefix": "PbS", "Gru": "3.09970815181", "Mode_Index": "3"}
+{"Volume": null, "q": "0.243951839509", "prefix": "PbS", "Gru": "2.88210842154", "Mode_Index": "4"}
+{"Volume": null, "q": "0.243951839509", "prefix": "PbS", "Gru": "1.83591375719", "Mode_Index": "5"}
+{"Volume": null, "q": "0.254558441227", "prefix": "PbS", "Gru": "3.67599583524", "Mode_Index": "0"}
+{"Volume": null, "q": "0.254558441227", "prefix": "PbS", "Gru": "3.25960790743", "Mode_Index": "1"}
+{"Volume": null, "q": "0.254558441227", "prefix": "PbS", "Gru": "1.84138157492", "Mode_Index": "2"}
+{"Volume": null, "q": "0.254558441227", "prefix": "PbS", "Gru": "2.18781513671", "Mode_Index": "3"}
+{"Volume": null, "q": "0.254558441227", "prefix": "PbS", "Gru": "2.65578392657", "Mode_Index": "4"}
+{"Volume": null, "q": "0.254558441227", "prefix": "PbS", "Gru": "1.63383242575", "Mode_Index": "5"}
+{"Volume": null, "q": "0.265165042945", "prefix": "PbS", "Gru": "3.70909348739", "Mode_Index": "0"}
+{"Volume": null, "q": "0.265165042945", "prefix": "PbS", "Gru": "2.28797473289", "Mode_Index": "1"}
+{"Volume": null, "q": "0.265165042945", "prefix": "PbS", "Gru": "0.972624662864", "Mode_Index": "2"}
+{"Volume": null, "q": "0.265165042945", "prefix": "PbS", "Gru": "2.3604566207", "Mode_Index": "3"}
+{"Volume": null, "q": "0.265165042945", "prefix": "PbS", "Gru": "2.4338892489", "Mode_Index": "4"}
+{"Volume": null, "q": "0.265165042945", "prefix": "PbS", "Gru": "1.28173256185", "Mode_Index": "5"}
+{"Volume": null, "q": "0.275771644663", "prefix": "PbS", "Gru": "3.77640853462", "Mode_Index": "0"}
+{"Volume": null, "q": "0.275771644663", "prefix": "PbS", "Gru": "1.49128847146", "Mode_Index": "1"}
+{"Volume": null, "q": "0.275771644663", "prefix": "PbS", "Gru": "1.04746426965", "Mode_Index": "2"}
+{"Volume": null, "q": "0.275771644663", "prefix": "PbS", "Gru": "3.24670609287", "Mode_Index": "3"}
+{"Volume": null, "q": "0.275771644663", "prefix": "PbS", "Gru": "2.09829771279", "Mode_Index": "4"}
+{"Volume": null, "q": "0.275771644663", "prefix": "PbS", "Gru": "1.01015960884", "Mode_Index": "5"}
+{"Volume": null, "q": "0.286378246381", "prefix": "PbS", "Gru": "3.37337744331", "Mode_Index": "0"}
+{"Volume": null, "q": "0.286378246381", "prefix": "PbS", "Gru": "3.37337744331", "Mode_Index": "1"}
+{"Volume": null, "q": "0.286378246381", "prefix": "PbS", "Gru": "3.34979441005", "Mode_Index": "2"}
+{"Volume": null, "q": "0.286378246381", "prefix": "PbS", "Gru": "3.98756208519", "Mode_Index": "3"}
+{"Volume": null, "q": "0.286378246381", "prefix": "PbS", "Gru": "3.98756208519", "Mode_Index": "4"}
+{"Volume": null, "q": "0.286378246381", "prefix": "PbS", "Gru": "1.49684543381", "Mode_Index": "5"}
+{"Volume": null, "q": "0.296984848098", "prefix": "PbS", "Gru": "2.92422697404", "Mode_Index": "0"}
+{"Volume": null, "q": "0.296984848098", "prefix": "PbS", "Gru": "2.56325156344", "Mode_Index": "1"}
+{"Volume": null, "q": "0.296984848098", "prefix": "PbS", "Gru": "3.3720931474", "Mode_Index": "2"}
+{"Volume": null, "q": "0.296984848098", "prefix": "PbS", "Gru": "3.80118251899", "Mode_Index": "3"}
+{"Volume": null, "q": "0.296984848098", "prefix": "PbS", "Gru": "1.76723577679", "Mode_Index": "4"}
+{"Volume": null, "q": "0.296984848098", "prefix": "PbS", "Gru": "2.40615467576", "Mode_Index": "5"}
+{"Volume": null, "q": "0.307591449816", "prefix": "PbS", "Gru": "3.30964907893", "Mode_Index": "0"}
+{"Volume": null, "q": "0.307591449816", "prefix": "PbS", "Gru": "3.48421444892", "Mode_Index": "1"}
+{"Volume": null, "q": "0.307591449816", "prefix": "PbS", "Gru": "1.46523404318", "Mode_Index": "2"}
+{"Volume": null, "q": "0.307591449816", "prefix": "PbS", "Gru": "1.42603589566", "Mode_Index": "3"}
+{"Volume": null, "q": "0.307591449816", "prefix": "PbS", "Gru": "3.10954703656", "Mode_Index": "4"}
+{"Volume": null, "q": "0.307591449816", "prefix": "PbS", "Gru": "2.01404550204", "Mode_Index": "5"}
+{"Volume": null, "q": "0.318198051534", "prefix": "PbS", "Gru": "1.88575639917", "Mode_Index": "0"}
+{"Volume": null, "q": "0.318198051534", "prefix": "PbS", "Gru": "1.88575639917", "Mode_Index": "1"}
+{"Volume": null, "q": "0.318198051534", "prefix": "PbS", "Gru": "5.09274421663", "Mode_Index": "2"}
+{"Volume": null, "q": "0.318198051534", "prefix": "PbS", "Gru": "4.75157126148", "Mode_Index": "3"}
+{"Volume": null, "q": "0.318198051534", "prefix": "PbS", "Gru": "4.75157126148", "Mode_Index": "4"}
+{"Volume": null, "q": "0.318198051534", "prefix": "PbS", "Gru": "0.350265828364", "Mode_Index": "5"}
+{"Volume": null, "q": "0.328804653252", "prefix": "PbS", "Gru": "5.45541988726", "Mode_Index": "0"}
+{"Volume": null, "q": "0.328804653252", "prefix": "PbS", "Gru": "6.25951073438", "Mode_Index": "1"}
+{"Volume": null, "q": "0.328804653252", "prefix": "PbS", "Gru": "1.68632486388", "Mode_Index": "2"}
+{"Volume": null, "q": "0.328804653252", "prefix": "PbS", "Gru": "4.15074860342", "Mode_Index": "3"}
+{"Volume": null, "q": "0.328804653252", "prefix": "PbS", "Gru": "2.40278459304", "Mode_Index": "4"}
+{"Volume": null, "q": "0.328804653252", "prefix": "PbS", "Gru": "0.831164780618", "Mode_Index": "5"}
+{"Volume": null, "q": "0.33941125497", "prefix": "PbS", "Gru": "4.17966541157", "Mode_Index": "0"}
+{"Volume": null, "q": "0.33941125497", "prefix": "PbS", "Gru": "3.88037131184", "Mode_Index": "1"}
+{"Volume": null, "q": "0.33941125497", "prefix": "PbS", "Gru": "1.96669396221", "Mode_Index": "2"}
+{"Volume": null, "q": "0.33941125497", "prefix": "PbS", "Gru": "3.14933206522", "Mode_Index": "3"}
+{"Volume": null, "q": "0.33941125497", "prefix": "PbS", "Gru": "1.90917669316", "Mode_Index": "4"}
+{"Volume": null, "q": "0.33941125497", "prefix": "PbS", "Gru": "1.62071897536", "Mode_Index": "5"}
+{"Volume": null, "q": "0.350017856687", "prefix": "PbS", "Gru": "3.00418284757", "Mode_Index": "0"}
+{"Volume": null, "q": "0.350017856687", "prefix": "PbS", "Gru": "3.46942806422", "Mode_Index": "1"}
+{"Volume": null, "q": "0.350017856687", "prefix": "PbS", "Gru": "1.38920218832", "Mode_Index": "2"}
+{"Volume": null, "q": "0.350017856687", "prefix": "PbS", "Gru": "2.33899262191", "Mode_Index": "3"}
+{"Volume": null, "q": "0.350017856687", "prefix": "PbS", "Gru": "1.90776901698", "Mode_Index": "4"}
+{"Volume": null, "q": "0.350017856687", "prefix": "PbS", "Gru": "1.34764092772", "Mode_Index": "5"}
+{"Volume": null, "q": "0.360624458405", "prefix": "PbS", "Gru": "2.47709224955", "Mode_Index": "0"}
+{"Volume": null, "q": "0.360624458405", "prefix": "PbS", "Gru": "3.32377965259", "Mode_Index": "1"}
+{"Volume": null, "q": "0.360624458405", "prefix": "PbS", "Gru": "1.0081562301", "Mode_Index": "2"}
+{"Volume": null, "q": "0.360624458405", "prefix": "PbS", "Gru": "2.088355823", "Mode_Index": "3"}
+{"Volume": null, "q": "0.360624458405", "prefix": "PbS", "Gru": "1.98275767759", "Mode_Index": "4"}
+{"Volume": null, "q": "0.360624458405", "prefix": "PbS", "Gru": "1.07702234677", "Mode_Index": "5"}
+{"Volume": null, "q": "0.371231060123", "prefix": "PbS", "Gru": "3.5968949561", "Mode_Index": "0"}
+{"Volume": null, "q": "0.371231060123", "prefix": "PbS", "Gru": "3.44491493314", "Mode_Index": "1"}
+{"Volume": null, "q": "0.371231060123", "prefix": "PbS", "Gru": "2.51373892123", "Mode_Index": "2"}
+{"Volume": null, "q": "0.371231060123", "prefix": "PbS", "Gru": "3.84694314328", "Mode_Index": "3"}
+{"Volume": null, "q": "0.371231060123", "prefix": "PbS", "Gru": "2.32223809072", "Mode_Index": "4"}
+{"Volume": null, "q": "0.371231060123", "prefix": "PbS", "Gru": "1.78568347787", "Mode_Index": "5"}
+{"Volume": null, "q": "0.381837661841", "prefix": "PbS", "Gru": "3.31059591021", "Mode_Index": "0"}
+{"Volume": null, "q": "0.381837661841", "prefix": "PbS", "Gru": "2.93521788706", "Mode_Index": "1"}
+{"Volume": null, "q": "0.381837661841", "prefix": "PbS", "Gru": "1.78745660157", "Mode_Index": "2"}
+{"Volume": null, "q": "0.381837661841", "prefix": "PbS", "Gru": "3.11723236514", "Mode_Index": "3"}
+{"Volume": null, "q": "0.381837661841", "prefix": "PbS", "Gru": "2.14042913813", "Mode_Index": "4"}
+{"Volume": null, "q": "0.381837661841", "prefix": "PbS", "Gru": "1.49304905017", "Mode_Index": "5"}
+{"Volume": null, "q": "0.392444263559", "prefix": "PbS", "Gru": "2.82365080766", "Mode_Index": "0"}
+{"Volume": null, "q": "0.392444263559", "prefix": "PbS", "Gru": "2.69485505802", "Mode_Index": "1"}
+{"Volume": null, "q": "0.392444263559", "prefix": "PbS", "Gru": "1.00485797642", "Mode_Index": "2"}
+{"Volume": null, "q": "0.392444263559", "prefix": "PbS", "Gru": "2.47887768256", "Mode_Index": "3"}
+{"Volume": null, "q": "0.392444263559", "prefix": "PbS", "Gru": "2.36627245175", "Mode_Index": "4"}
+{"Volume": null, "q": "0.392444263559", "prefix": "PbS", "Gru": "1.25113516628", "Mode_Index": "5"}
+{"Volume": null, "q": "0.403050865276", "prefix": "PbS", "Gru": "2.98548687103", "Mode_Index": "0"}
+{"Volume": null, "q": "0.403050865276", "prefix": "PbS", "Gru": "2.71282655976", "Mode_Index": "1"}
+{"Volume": null, "q": "0.403050865276", "prefix": "PbS", "Gru": "1.05301002985", "Mode_Index": "2"}
+{"Volume": null, "q": "0.403050865276", "prefix": "PbS", "Gru": "2.93886714438", "Mode_Index": "3"}
+{"Volume": null, "q": "0.403050865276", "prefix": "PbS", "Gru": "2.14975424542", "Mode_Index": "4"}
+{"Volume": null, "q": "0.403050865276", "prefix": "PbS", "Gru": "1.10733497257", "Mode_Index": "5"}
+{"Volume": null, "q": "0.413657466994", "prefix": "PbS", "Gru": "2.90124624407", "Mode_Index": "0"}
+{"Volume": null, "q": "0.413657466994", "prefix": "PbS", "Gru": "3.70303978201", "Mode_Index": "1"}
+{"Volume": null, "q": "0.413657466994", "prefix": "PbS", "Gru": "1.68318729459", "Mode_Index": "2"}
+{"Volume": null, "q": "0.413657466994", "prefix": "PbS", "Gru": "3.57162989502", "Mode_Index": "3"}
+{"Volume": null, "q": "0.413657466994", "prefix": "PbS", "Gru": "1.91984238821", "Mode_Index": "4"}
+{"Volume": null, "q": "0.413657466994", "prefix": "PbS", "Gru": "1.29414290338", "Mode_Index": "5"}
+{"Volume": null, "q": "0.424264068712", "prefix": "PbS", "Gru": "2.84546675144", "Mode_Index": "0"}
+{"Volume": null, "q": "0.424264068712", "prefix": "PbS", "Gru": "2.84945803109", "Mode_Index": "1"}
+{"Volume": null, "q": "0.424264068712", "prefix": "PbS", "Gru": "2.39648837901", "Mode_Index": "2"}
+{"Volume": null, "q": "0.424264068712", "prefix": "PbS", "Gru": "3.80639991778", "Mode_Index": "3"}
+{"Volume": null, "q": "0.424264068712", "prefix": "PbS", "Gru": "2.37215073896", "Mode_Index": "4"}
+{"Volume": null, "q": "0.424264068712", "prefix": "PbS", "Gru": "1.7515095153", "Mode_Index": "5"}
+{"Volume": null, "q": "0.43487067043", "prefix": "PbS", "Gru": "3.41989398167", "Mode_Index": "0"}
+{"Volume": null, "q": "0.43487067043", "prefix": "PbS", "Gru": "2.94978994472", "Mode_Index": "1"}
+{"Volume": null, "q": "0.43487067043", "prefix": "PbS", "Gru": "1.74482878766", "Mode_Index": "2"}
+{"Volume": null, "q": "0.43487067043", "prefix": "PbS", "Gru": "2.14622157711", "Mode_Index": "3"}
+{"Volume": null, "q": "0.43487067043", "prefix": "PbS", "Gru": "3.23953160991", "Mode_Index": "4"}
+{"Volume": null, "q": "0.43487067043", "prefix": "PbS", "Gru": "1.73880929048", "Mode_Index": "5"}
+{"Volume": null, "q": "0.445477272148", "prefix": "PbS", "Gru": "3.89179090808", "Mode_Index": "0"}
+{"Volume": null, "q": "0.445477272148", "prefix": "PbS", "Gru": "2.83909083092", "Mode_Index": "1"}
+{"Volume": null, "q": "0.445477272148", "prefix": "PbS", "Gru": "1.35046870878", "Mode_Index": "2"}
+{"Volume": null, "q": "0.445477272148", "prefix": "PbS", "Gru": "2.61272419398", "Mode_Index": "3"}
+{"Volume": null, "q": "0.445477272148", "prefix": "PbS", "Gru": "2.62240261455", "Mode_Index": "4"}
+{"Volume": null, "q": "0.445477272148", "prefix": "PbS", "Gru": "1.35471678907", "Mode_Index": "5"}
+{"Volume": null, "q": "0.456083873865", "prefix": "PbS", "Gru": "3.7501689112", "Mode_Index": "0"}
+{"Volume": null, "q": "0.456083873865", "prefix": "PbS", "Gru": "2.58987668371", "Mode_Index": "1"}
+{"Volume": null, "q": "0.456083873865", "prefix": "PbS", "Gru": "4.03476165141", "Mode_Index": "2"}
+{"Volume": null, "q": "0.456083873865", "prefix": "PbS", "Gru": "0.833143168509", "Mode_Index": "3"}
+{"Volume": null, "q": "0.456083873865", "prefix": "PbS", "Gru": "4.00788174853", "Mode_Index": "4"}
+{"Volume": null, "q": "0.456083873865", "prefix": "PbS", "Gru": "2.44393011403", "Mode_Index": "5"}
+{"Volume": null, "q": "0.466690475583", "prefix": "PbS", "Gru": "3.66776565268", "Mode_Index": "0"}
+{"Volume": null, "q": "0.466690475583", "prefix": "PbS", "Gru": "3.18308562806", "Mode_Index": "1"}
+{"Volume": null, "q": "0.466690475583", "prefix": "PbS", "Gru": "1.50042318265", "Mode_Index": "2"}
+{"Volume": null, "q": "0.466690475583", "prefix": "PbS", "Gru": "3.42627138135", "Mode_Index": "3"}
+{"Volume": null, "q": "0.466690475583", "prefix": "PbS", "Gru": "2.29035504073", "Mode_Index": "4"}
+{"Volume": null, "q": "0.466690475583", "prefix": "PbS", "Gru": "1.3478165831", "Mode_Index": "5"}
+{"Volume": null, "q": "0.477297077301", "prefix": "PbS", "Gru": "3.90085021368", "Mode_Index": "0"}
+{"Volume": null, "q": "0.477297077301", "prefix": "PbS", "Gru": "3.48481595262", "Mode_Index": "1"}
+{"Volume": null, "q": "0.477297077301", "prefix": "PbS", "Gru": "1.62956416066", "Mode_Index": "2"}
+{"Volume": null, "q": "0.477297077301", "prefix": "PbS", "Gru": "2.87966866348", "Mode_Index": "3"}
+{"Volume": null, "q": "0.477297077301", "prefix": "PbS", "Gru": "2.75231699163", "Mode_Index": "4"}
+{"Volume": null, "q": "0.477297077301", "prefix": "PbS", "Gru": "1.39662710395", "Mode_Index": "5"}
