@@ -1,6 +1,0 @@
-&input
-amass(1)= 207.2d0,
-amass(2)= 32.06d0,
-flfrc='PbS.fc', flfrq='PbS.freq', asr='crystal', fldyn='PbS.dynmat'
-dos=.true., nk1=10,nk2=10,nk3=10, deltaE=5
-/
