@@ -1,0 +1,116 @@
+TACC: Setting memory limits for job 2123919 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/bash
+#$ -V    #Inherit the submission environment
+#$ -cwd  # Start job in submission directory
+#$ -N gete_disp     # Job Name
+#$ -j y  # Combine stderr and stdout
+#$ -o $JOB_NAME.o$JOB_ID         # Name of the output file (eg. myMPI.oJobID)
+#$ -pe 12way 36  # Requests 12 tasks/node, 24 cores total
+#$ -q normal       # Queue name normal
+#$ -l h_rt=24:00:00      # Run time (hh:mm:ss) - 1.5 hours
+#$ -A ABO3
+set -x   # Echo commands, use set echo with csh
+
+
+PREFIX="GeTe_d"
+
+# calculations
+
+
+INFILE="$PREFIX.in"
+OUTFILE="$PREFIX.out"
+
+cat > $INFILE << EOF
+&CONTROL
+wf_collect=.false.,
+calculation ='scf',
+restart_mode = 'from_scratch',
+prefix='$PREFIX',
+pseudo_dir='/work/02599/asmiller/pseudo/gbrv/pbe_GBRV/',
+tstress=.true.,
+tprnfor=.true.,
+etot_conv_thr=1.0D-4,
+forc_conv_thr=5.0D-8,
+/
+&SYSTEM
+input_dft='pbesol',
+ibrav=0,
+celldm(1)=11.35536433d0,
+nat=2,
+ntyp=2,
+ecutwfc=50,
+ecutrho=600,
+occupations = 'fixed',
+/
+&ELECTRONS
+electron_maxstep=100,
+conv_thr = 1.0D-10,
+mixing_mode = 'plain',
+mixing_beta = 0.7d0,
+diagonalization = 'cg',
+diago_cg_maxiter = 100
+/
+&IONS
+ion_dynamics='bfgs',
+/
+&CELL
+cell_dynamics='bfgs',
+press=0.d0
+/
+ATOMIC_SPECIES
+Ge 72.63d0 ge_pbe_v1.uspp.F.UPF
+Te 127.6d0 te_pbe_v1.uspp.F.UPF
+
+CELL_PARAMETERS
+   0.000000000d0  -0.399246222d0   0.578673564d0
+   0.345757371d0   0.199623111d0   0.578673564d0
+  -0.345757371d0   0.199623111d0   0.578673564d0
+
+ATOMIC_POSITIONS crystal
+Ge       0.006052773d0   0.006052773d0   0.006052773d0
+Te       0.483947227d0   0.483947227d0   0.483947227d0
+
+K_POINTS automatic
+12 12 12 0 0 0 
+
+EOF
+
+ibrun pw.x -npool 3 < $INFILE > $OUTFILE
+
+INFILE="$PREFIX.ph.in"
+OUTFILE="$PREFIX.ph.out"
+
+cat > $INFILE << EOF 
+Dispersion
+&inputph
+tr2_ph=1.0d-16,
+epsil=.true.,
+ldisp=.true.,
+prefix='$PREFIX',
+fildyn='$PREFIX.dyn',
+nq1=6, nq2=6, nq3=6
+/
+
+
+EOF
+
+ibrun ph.x -npool 3 < $INFILE > $OUTFILE
+
+rm *.wf*
+
+--------------------------------------------------------------------------------
+TACC: Done.
++ PREFIX=GeTe_d
++ INFILE=GeTe_d.in
++ OUTFILE=GeTe_d.out
++ cat
++ ibrun pw.x -npool 3
++ INFILE=GeTe_d.ph.in
++ OUTFILE=GeTe_d.ph.out
++ cat
++ ibrun ph.x -npool 3
++ rm GeTe_d.wfc1 GeTe_d.wfc10 GeTe_d.wfc11 GeTe_d.wfc12 GeTe_d.wfc13 GeTe_d.wfc14 GeTe_d.wfc15 GeTe_d.wfc16 GeTe_d.wfc17 GeTe_d.wfc18 GeTe_d.wfc19 GeTe_d.wfc2 GeTe_d.wfc20 GeTe_d.wfc21 GeTe_d.wfc22 GeTe_d.wfc23 GeTe_d.wfc24 GeTe_d.wfc25 GeTe_d.wfc26 GeTe_d.wfc27 GeTe_d.wfc28 GeTe_d.wfc29 GeTe_d.wfc3 GeTe_d.wfc30 GeTe_d.wfc31 GeTe_d.wfc32 GeTe_d.wfc33 GeTe_d.wfc34 GeTe_d.wfc35 GeTe_d.wfc36 GeTe_d.wfc4 GeTe_d.wfc5 GeTe_d.wfc6 GeTe_d.wfc7 GeTe_d.wfc8 GeTe_d.wfc9
+TACC: Cleaning up after job: 2123919
+TACC: Done.
