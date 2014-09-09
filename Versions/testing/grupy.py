@@ -97,7 +97,6 @@ q, Darray = ReadDynMat(Gin.nat, Gin.m, Gin.dir)
 
 ## Format the data to be written to a formatted output file
 Gin.q, gru_data, mode_index, omega_eq, acoustic = GruCalc(Gin, q, Darray)
-print len(q), len(Gin.q)
 
 
 
@@ -105,8 +104,8 @@ print len(q), len(Gin.q)
 '''
 FIND index in q of Gamma point (0,0,0) and match that with the index of Gin.q
     -> find which frequencies = 0 in GruCalc at the same index
-
 '''
+
 
 
 
@@ -119,7 +118,7 @@ if not options.bands and not options.avg:
         Gout = grupy_out(Gin.prefix, BZ_labels, gru_data, mode_index, None, omega_eq, acoustic,units)
 
     else:
-        bands = GetBands(Gin)
+        bands = GetBands(Gin, units)
 
         Gout = grupy_out(Gin.prefix, None, gru_data, mode_index, None, bands[0], acoustic, units)
     WriteGrupyFile(Gout, Gin, 0)

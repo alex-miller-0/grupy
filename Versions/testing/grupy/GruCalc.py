@@ -2,6 +2,15 @@
 import numpy as np
 from qe.ReadDynMat import *
 import cmath
+def GetAcousticModes(q, omega_eq):
+    acoustic = []
+    for x in range(len(q)):
+        if float(q[x][0]) == 0 and float(q[x][1]) == 0 and float(q[x][2]) == 0:
+            for y in range(len(omega_eq)):
+                if round(omega_eq[y][x],10) == 0:
+                    acoustic.append(y-1)
+                #print omega_eq[y][x], y-1, x
+            return acoustic
 
 
 def Get_Eval_Evec_dDdV(Darray, BZ_path):
@@ -66,7 +75,7 @@ def GruCalc(Gin, q, Darray):
     nat = Gin.nat
     amass = Gin.m
     BZ_path = Gin.BZ_path
-    acoustic = {}
+
 
 
     # get equilibrium eigenvalues, equilibrium eigenvectors, and dD (nonequilibrium differences) matrix
@@ -223,6 +232,6 @@ def GruCalc(Gin, q, Darray):
                                 acoustic['%s'%(BZ_path[i])]=[j]
                         '''
 
-
+    acoustic = GetAcousticModes(q,omega_i)
     return q, gru, gru_i, omega_i, acoustic
 

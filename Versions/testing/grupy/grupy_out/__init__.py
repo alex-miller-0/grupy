@@ -2,7 +2,7 @@
 
 import sys
 import os
-
+'''
 def GetAcousticModes (acoustic,q_labels):
          for key in acoustic:
             for label in range(len(q_labels)):
@@ -10,7 +10,7 @@ def GetAcousticModes (acoustic,q_labels):
                     for i in range(len(acoustic[key])):
                         acoustic[key][i] = int(acoustic[key][i])
                     return acoustic[key]
-
+'''
 class grupy_out:
 
     def __init__(self,
@@ -30,7 +30,8 @@ class grupy_out:
         self.mode_index = mode_index
         self.group_velocity = group_velocity
         self.omega_eq = omega_eq
-        self.acoustic_i = GetAcousticModes(acoustic,q_labels)
+        #self.acoustic_i = GetAcousticModes(acoustic,q_labels)
+        self.acoustic_i = acoustic
         self.units = units
 
 

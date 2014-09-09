@@ -41,7 +41,7 @@ def avg(Gin,temps):
                     omega.append(l['Omega_eq'])
 
     for t in range(len(temps)):
-    gru_avg = 0.0
+        gru_avg = 0.0
         CV = 0.0
         for i in xrange(len(gru)):
             gru_avg += float(gru[i])* cv(omega[i],temps[t])
