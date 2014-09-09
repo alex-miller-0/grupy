@@ -214,13 +214,14 @@ def GruCalc(Gin, q, Darray):
                         gru_i[j + 1].append(j)
                         omega_i[j+1].append(eval_eq[i][j])
 
+                        '''
                         # Get the acoustic modes
                         if round(eval_eq[i][j],10) == 0:
                             if('%s'%(BZ_path[i]) in acoustic.keys()):
                                 acoustic['%s'%(BZ_path[i])].append(j)
                             else:
                                 acoustic['%s'%(BZ_path[i])]=[j]
-
+                        '''
 
 
     return q, gru, gru_i, omega_i, acoustic

@@ -95,9 +95,22 @@ if Gin.path:
 q, Darray = ReadDynMat(Gin.nat, Gin.m, Gin.dir)
 
 
-
 ## Format the data to be written to a formatted output file
 Gin.q, gru_data, mode_index, omega_eq, acoustic = GruCalc(Gin, q, Darray)
+print len(q), len(Gin.q)
+
+
+
+
+'''
+FIND index in q of Gamma point (0,0,0) and match that with the index of Gin.q
+    -> find which frequencies = 0 in GruCalc at the same index
+
+'''
+
+
+
+
 
 
 # noinspection PyInterpreter
