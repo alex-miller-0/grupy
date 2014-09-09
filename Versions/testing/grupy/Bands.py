@@ -1,6 +1,8 @@
 from qe.ReadDynMat import ReadDynMat
 import numpy
 import os
+#def GetModeTypes()
+
 
 
 def GetBands(Gin, cm):

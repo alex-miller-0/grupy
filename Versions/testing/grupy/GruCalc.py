@@ -66,6 +66,7 @@ def GruCalc(Gin, q, Darray):
     nat = Gin.nat
     amass = Gin.m
     BZ_path = Gin.BZ_path
+    acoustic = {}
 
 
     # get equilibrium eigenvalues, equilibrium eigenvectors, and dD (nonequilibrium differences) matrix
@@ -88,7 +89,8 @@ def GruCalc(Gin, q, Darray):
         if BZ_path:
             gru[0].append(BZ_path[i])
             gru_i[0].append(BZ_path[i])
-            omega_i[0].append(None)
+            #omega_i[0].append(None)
+            omega_i[0].append(BZ_path[i])
         else:
             gru[0].append(i)
             gru_i[0].append(i)
@@ -212,6 +214,14 @@ def GruCalc(Gin, q, Darray):
                         gru_i[j + 1].append(j)
                         omega_i[j+1].append(eval_eq[i][j])
 
+                        # Get the acoustic modes
+                        if round(eval_eq[i][j],10) == 0:
+                            if('%s'%(BZ_path[i]) in acoustic.keys()):
+                                acoustic['%s'%(BZ_path[i])].append(j)
+                            else:
+                                acoustic['%s'%(BZ_path[i])]=[j]
 
-    return q, gru, gru_i, omega_i
+
+
+    return q, gru, gru_i, omega_i, acoustic
 

@@ -13,6 +13,7 @@ def cv(omega,T):
     cv = kB * (x**2) * ( e**x / (e**x-1)**2 )
     return cv
 
+#def GetAcousticModes():
 
 
 
@@ -21,13 +22,20 @@ def avg(Gin,temps):
     gru=[]
     omega=[]
     with open("%s.grupy.out"%Gin.prefix) as f:
+        modes = []
+        #for line in f:
+        #    l = json.loads(line)
+        #    if float(l['q']) == 0:
+        #        modes.append
+
+
         for line in f:
             l=json.loads(line)
             gru.append(l['Gru'])
             omega.append(l['Omega_eq'])
 
     for t in range(len(temps)):
-	gru_avg = 0.0
+    gru_avg = 0.0
         CV = 0.0
         for i in xrange(len(gru)):
             gru_avg += float(gru[i])* cv(omega[i],temps[t])

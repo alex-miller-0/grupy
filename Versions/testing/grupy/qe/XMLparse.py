@@ -55,11 +55,12 @@ def XMLparse (dirs):
                     if len(masses) < nat:
                         masses.append(0.)
 
+            #Note: this is pulling the masses out exactly as you put them in so make sure they're accurate!
             elif "SPECIE." in elem.tag:
                 n = int(elem.tag[-1:])
                 for x in elem.iter():
                     if x.tag == "MASS":
-                        masses[n-1] = float(x.text)
+                        masses[n-1] = float(x.text)*911.444242132
         M=masses
         N = nat
         import numpy as np

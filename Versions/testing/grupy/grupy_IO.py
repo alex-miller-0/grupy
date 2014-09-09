@@ -57,6 +57,8 @@ def GetInput():
 
 # # WRITE THE OUT FILE IN JSON FORMAT
 def WriteGrupyFile(Gout, Gin, bands_true):
+
+
     if bands_true == 1:
         gfile = "%s.grupy.bands.out" % Gout.prefix
     else:
@@ -67,7 +69,8 @@ def WriteGrupyFile(Gout, Gin, bands_true):
 
     #with open("%s.grupy.out"%Gout.prefix, "w") as file:
     with open('%s' % gfile, 'w') as file:
-
+        l = json.dumps({"units":'%s'%(Gout.units)})
+        file.write("%s\n"%l)
         if Gin.path:
             ## Write the high symmetry labels first
             for i in xrange(len(Gout.q_labels)):
@@ -97,13 +100,23 @@ def WriteGrupyFile(Gout, Gin, bands_true):
                     if len(Gout.gru_data[X][j]) > 1:
                         for i in xrange(1, len(Gout.gru_data[X][j])):  # 3N modes
 
+
                             data_line = {'prefix': '%s' % Gout.prefix,
                                          'Calculation': '%s' % Gin.dir[X],
                                          'Volume': '%s' % Gin.V[X],
                                          'q': '%s' % Gout.gru_data[X][j][0],
                                          'Mode_Index': '%s' % Gout.mode_index[i][j],
                                          'Omega': '%s' % Gout.gru_data[X][j][i],
-                                         'Group_Velocity': '%s' % Gout.group_velocity[X][j][i]}
+                                         'Group_Velocity': '%s' % Gout.group_velocity[X][j][i]
+
+                                        }
+
+                            data_line['Mode_Type'] = "O"
+                            for k in range(len(Gout.acoustic_i)):
+                                if int(Gout.acoustic_i[k]) == int(Gout.mode_index[i][j]):
+                                    data_line['Mode_Type'] = "A"
+                                    break
+
                             l = json.dumps(data_line)
                             file.write(l)
                             file.write("\n")
@@ -115,13 +128,22 @@ def WriteGrupyFile(Gout, Gin, bands_true):
 
                     # else you may just want to generate data for/plot a single band structure
                     else:
+
                         data_line = {'prefix': '%s' % Gout.prefix,
                                      'Calculation': '%s' % Gin.dir[X],
                                      'Volume': '%s' % Gin.V[X],
                                      'q': '%s' % Gout.gru_data[X][j][0],
                                      'Mode_Index': '%s' % Gout.mode_index[i][j],
                                      'Omega': '%s' % Gout.gru_data[X][j][i],
-                                     'Group_Velocity': '%s' % Gout.group_velocity[X][j][i]}
+                                     'Group_Velocity': '%s' % Gout.group_velocity[X][j][i]
+                                    }
+
+                        data_line['Mode_Type'] = "O"
+                        for k in range(len(Gout.acoustic_i)):
+                            if int(Gout.acoustic_i[k]) == int(Gout.mode_index[i][j]):
+                                data_line['Mode_Type'] = "A"
+                                break
+
                         l = json.dumps(data_line)
                         file.write(l)
                         file.write("\n")
@@ -131,12 +153,20 @@ def WriteGrupyFile(Gout, Gin, bands_true):
                     #print num
                     #print Gout.omega_eq
                     for i in xrange(1, len(Gout.gru_data)):  # 3N modes
+
                         data_line = {'prefix': '%s' % Gout.prefix,
                                      'Volume': None,
                                      'q': '%s' % Gout.gru_data[0][j],
                                      'Mode_Index': '%s' % Gout.mode_index[i][j],
                                      'Gru': '%s' % Gout.gru_data[i][j],
-                                        }
+                                    }
+
+                        data_line['Mode_Type'] = "O"
+                        for k in range(len(Gout.acoustic_i)):
+                            if int(Gout.acoustic_i[k]) == int(Gout.mode_index[i][j]):
+                                data_line['Mode_Type'] = "A"
+                                break
+
                         if not Gin.path:
                             data_line['Omega_eq']= '%s' %Gout.omega_eq[j][i]
                         l = json.dumps(data_line)

@@ -14,7 +14,7 @@ import subprocess as sub
 
 
 # Welcome to grupy!
-print "\n!-----------   grupy! version 1.1.4   -----------!\n"
+print "\n!-----------   grupy! version 1.2.1   -----------!\n"
 
 
 # should eventually write some flags for bad data input
@@ -45,13 +45,15 @@ parser.add_option("--cm", dest="cm", action="store_true")
 
 (options, args) = parser.parse_args()
 
-
+units = "thz"
+if options.cm == True:
+    units = "cm-1"
 
 
 #### grupy_in object
 ####################
 Gin = grupy_in(dir, in_path, None, None, None, None, None, None, None, None, None)
-#Gin.prefix, Gin.V, Gin.m, Gin.nat = XMLparse(Gin.dir)
+Gin.prefix, Gin.V, Gin.m, Gin.nat = XMLparse(Gin.dir)
 
 if Gin.in_path:
     Gin.path, Gin.hs_points = MakePath(Gin.in_path)
@@ -59,8 +61,8 @@ else:
     "No path selected: I will calculate average Gruneisen parameter."
 
 # Old ways of getting these; think I will delete soon
-Gin.prefix = GetPrefix(Gin.dir)
-(Gin.nat, Gin.V, Gin.m) = GetNat_M_V(Gin.dir, Gin.prefix)
+#Gin.prefix = GetPrefix(Gin.dir)
+#(Gin.nat, Gin.V, Gin.m) = GetNat_M_V(Gin.dir, Gin.prefix)
 
 if options.make_scripts:
     MakeMatdyn(Gin.dir, Gin.prefix, Gin.path, Gin.m)
@@ -95,16 +97,18 @@ q, Darray = ReadDynMat(Gin.nat, Gin.m, Gin.dir)
 
 
 ## Format the data to be written to a formatted output file
-Gin.q, gru_data, mode_index, omega_eq = GruCalc(Gin, q, Darray)
+Gin.q, gru_data, mode_index, omega_eq, acoustic = GruCalc(Gin, q, Darray)
 
 
+# noinspection PyInterpreter
 if not options.bands and not options.avg:
     if Gin.path:
-        Gout = grupy_out(Gin.prefix, BZ_labels, gru_data, mode_index, None, omega_eq)
+        Gout = grupy_out(Gin.prefix, BZ_labels, gru_data, mode_index, None, omega_eq, acoustic,units)
+
     else:
         bands = GetBands(Gin)
 
-        Gout = grupy_out(Gin.prefix, None, gru_data, mode_index, None, bands[0])
+        Gout = grupy_out(Gin.prefix, None, gru_data, mode_index, None, bands[0], acoustic, units)
     WriteGrupyFile(Gout, Gin, 0)
     print "\ngrupy.out file written\n"
 
@@ -135,9 +139,9 @@ if options.bands:
 
     group_velocity = GetGroupVelocity(bands)
     if Gin.path:
-        Gout = grupy_out(Gin.prefix, BZ_labels, bands, mode_index, group_velocity, None)
+        Gout = grupy_out(Gin.prefix, BZ_labels, bands, mode_index, group_velocity, None, acoustic,units)
     else:
-        Gout = grupy_out(Gin.prefix, None, bands, mode_index, group_velocity, None)
+        Gout = grupy_out(Gin.prefix, None, bands, mode_index, group_velocity, None, acoustic,units)
 
 
     WriteGrupyFile(Gout, Gin, 1)
