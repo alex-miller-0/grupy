@@ -18,6 +18,9 @@ def cv(omega,T):
 
 
 def avg(Gin,temps):
+
+    modes = "optical"
+
     ret = {}
     gru=[]
     omega=[]
@@ -31,8 +34,11 @@ def avg(Gin,temps):
 
         for line in f:
             l=json.loads(line)
-            gru.append(l['Gru'])
-            omega.append(l['Omega_eq'])
+
+            if modes=="optical":
+                if l['Mode_Type'] == "O":
+                    gru.append(l['Gru'])
+                    omega.append(l['Omega_eq'])
 
     for t in range(len(temps)):
     gru_avg = 0.0
@@ -44,6 +50,8 @@ def avg(Gin,temps):
         ret[t]= {'temperature (K)':temps[t], 'average Gruneisen': gru_avg, 'Cv':CV}
     
     with open("%s.avg.gru"%Gin.prefix, 'w') as g:
+        if modes=="optical":
+            g.writelines("Weighted optical mode average Gruneisen")
         for key in ret:
             g.writelines("%s\n"%ret[key])
     return ret
