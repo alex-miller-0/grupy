@@ -28,6 +28,6 @@ def MakePath(path):
                             if p[2] == ret_path[-1][2]:
                                 continue
 
-                ret_path.append([round(p[0], 4), round(p[1], 4), round(p[2], 4)])
+                ret_path.append([round(p[0], 10), round(p[1], 10), round(p[2], 10)])
 
     return ret_path, ret_labels

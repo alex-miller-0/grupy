@@ -60,6 +60,7 @@ def MakeMatdyn(dirs, prefix, path, m):
             for i in xrange(len(path)):
 
                 for j in xrange(len(path[i])):
+                    print path[i][j]
                     f.writelines("%s\t" % (path[i][j]))
 
                 f.writelines("\n")
