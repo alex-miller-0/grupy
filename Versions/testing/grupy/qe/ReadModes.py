@@ -13,25 +13,25 @@ def BuildEvec(tVec):
                 vec.append(float(tVec[i][k])+float(tVec[i][k+1])*1j)
     return vec
 
-def SortModes(vec,val,evec):
+def SortModes(vec,val,evec,nat):
     evals = {}
-    #print np.absolute(np.dot(vec[0],evec['1']))
 
-    for i in range(len(vec)):
-        tmpDot = 0
+    for i in range(3*nat):
+        tmpDot = 0.0
         tmpMode = 0
-        for j in range(len(vec)):
+        for j in range(3*nat):
 
             # numpy.vdot is used for complex vectors (numpy.dot won't give the proper Kroneker products here)
             d = np.absolute(np.vdot(np.array(vec[i]), np.array(evec['%s'%(j+1)]).T))
 
-            if d>tmpDot:
-                tmpDot = d
-                tmpMode = j+1
+            if d > tmpDot:
+                if '%s'%(j+1) not in evals:
+                    #print evals.keys(), j+1
+                    evals['%s'%(j+1)] = val[i]
 
-        evals['%s'%tmpMode] = val[i]
-
-    return evals
+    #if len(evals)<3*nat:
+        #print evals
+    return dict(sorted(evals.items()))
 
 
 def ReadModes(nat, amass, dir):
@@ -107,7 +107,7 @@ def ReadModes(nat, amass, dir):
                             evec['%s'%tmpMode] = ev
                         #Check if this is the first evec. If so, put it in evec. If not, dot it w/ evec to sort modes
 
-                        sorted = SortModes(vec,val,evec)
+                        sorted = SortModes(vec,val,evec,nat)
                         eval[x].append(sorted)
 
                         tmpVec = None

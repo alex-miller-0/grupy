@@ -90,8 +90,8 @@ if Gin.path:
     ## Generate the BZ path and corresponding high symmetry labels
     Gin.BZ_path, BZ_labels = MakeBZPath(Gin.hs_points, Gin.path)
 
-eval = ReadModes(Gin.nat, Gin.m, Gin.dir)
-
+omega = ReadModes(Gin.nat, Gin.m, Gin.dir)
+Gruneisen(omega, Gin.V)
 '''
 ## Get the data from QE output text files
 q, Darray = ReadDynMat(Gin.nat, Gin.m, Gin.dir)
