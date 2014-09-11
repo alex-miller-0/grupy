@@ -36,7 +36,17 @@ def GetGrupyData(type, calc):
                         prefix = l['prefix']
                         num_modes = int(l['num_modes'])
 
+                    elif "Gruneisen" in line:
+                        q.append(float(l['reducedPath']))
+                        data.append(float(l['Gruneisen']))
+                        mode_i.append(int(l['mode']))
 
+                    elif "omega" in line:
+                        q.append(float(l['reducedPath']))
+                        data.append(float(l['omega']))
+                        mode_i.append(int(l['mode']))
+
+                    '''
                     elif calc and 'Calculation' in l:
                         if l['Calculation'].lower() == calc.lower():
                             if 'Omega' in l:
@@ -58,6 +68,7 @@ def GetGrupyData(type, calc):
                         #for i in range( len( l['Gru'] ) ):
                         #	temp.append( float(l['Gru'][i]) )
                         #data.append(temp)
+                   '''
 
     return prefix, num_modes, labels, q, data, mode_i, units
 

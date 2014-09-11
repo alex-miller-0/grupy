@@ -19,7 +19,7 @@ def GruPlot(prefix, num_modes, labels, q, data, mode_i, type, units):
 
     plt.title(prefix, fontsize=22)
 
-    print units
+
 
     if type == 'bands':
         if units=="thz":
@@ -40,17 +40,19 @@ def GruPlot(prefix, num_modes, labels, q, data, mode_i, type, units):
     #for i in range( len(data[0]) ): # number of modes
     #	if i!=0:
     #		plt.plot ( data[:,0], data[:,i], '.')
+
     for j in xrange(num_modes):
         y_data.append([])
-        for i in xrange(len(data)):  # should be equal to length of q and mode_i
-            if mode_i[i] == j:
+        for i in xrange(len(data)): # should be equal to length of q and mode_i
+            if int(mode_i[i]) == j+1:
 
                 # make 3N (i.e. number of modes) sets of y_data
                 y_data[j].append(data[i])
 
                 # only make the q_data values once (they are used by every mode)
-                if mode_i[i] == 0:
+                if mode_i[i] == 1:
                     q_data.append(q[i])
+
 
 
 
@@ -63,6 +65,10 @@ def GruPlot(prefix, num_modes, labels, q, data, mode_i, type, units):
             plt.plot(q_data, y_data[k], '.')
 
     plt.grid()
+
+
+
+
     plt.show()
 
     return 0

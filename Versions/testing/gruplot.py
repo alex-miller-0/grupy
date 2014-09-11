@@ -29,6 +29,7 @@ else:
     type = "gru"
     calc = None
 
+
 prefix, num_modes, labels, q, data, mode_i, units = GetGrupyData(type, calc)
 
 GruPlot(prefix, num_modes, labels, q, data, mode_i, type, units)

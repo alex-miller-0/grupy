@@ -16,7 +16,7 @@ class grupy_in:
                  BZ_path,
                  modes,
                  path,  # make from high symmetry path MAY NOT NEED THIS
-                 q,  # list of q points (get from calculations)
+                 q  # list of q points (get from calculations)
     ):
         self.dir = dir
         self.in_path = in_path
@@ -29,3 +29,4 @@ class grupy_in:
         self.modes = modes
         self.path = path
         self.q = q
+        self.BZ_labels = None

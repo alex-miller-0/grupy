@@ -11,28 +11,40 @@ def GetAcousticModes (acoustic,q_labels):
                         acoustic[key][i] = int(acoustic[key][i])
                     return acoustic[key]
 '''
-class grupy_out:
+class GrupyOut:
 
-    def __init__(self,
-                 prefix,
-                 q_labels,  # high symmetry labels (from database)
-                 gru_data,  # data matrix (from GruCalc)
-                 mode_index,  # want to make sure we know which mode is which
-                 group_velocity,
-                 omega_eq,
-                 acoustic,
-                 units
+    def __init__(self, Gin):
+        self.prefix = Gin.prefix
+        self.q_labels = Gin.BZ_labels
+        self.calc = Gin.dir
+        self.V = Gin.V
+        self.phonons = None
+        self.gruneisen = None
+        self.group_velocity = None
+        self.acoustic = None
+        self.units = None
 
-    ):
-        self.prefix = prefix
-        self.q_labels = q_labels
-        self.gru_data = gru_data
-        self.mode_index = mode_index
-        self.group_velocity = group_velocity
-        self.omega_eq = omega_eq
-        #self.acoustic_i = GetAcousticModes(acoustic,q_labels)
-        self.acoustic_i = acoustic
-        self.units = units
+    def GetAcousticModes(self,ph):
+        acoustic = []
+        for i in range(len(ph)):
+            acoustic.append([])
+            for j in range(len(ph[i])):
+                if ph[i][j]['cartQ'] == [0,0,0]:
+                    for key in ph[i][j].keys():
+                        if len(str(key)) == 1:
+                            if float(ph[i][j][key]) == 0:
+                                if int(key) not in acoustic[i]:
+                                    acoustic[i].append(int(key))
+        self.acoustic = acoustic
+
+    def Phonons(self,ph):
+        self.GetAcousticModes(ph)
+        self.phonons = ph
+
+    def Gruneisen(self,ph,gr):
+        self.GetAcousticModes(ph)
+        self.phonons = ph
+        self.gruneisen = gr
 
 
 

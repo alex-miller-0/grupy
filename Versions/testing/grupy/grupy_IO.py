@@ -92,35 +92,36 @@ def WriteGrupyFile(Gout, Gin, bands_true):
 
         for X in range(num):  # number of calculations (i.e. 3 for bands, 1 for Gru)
 
-            for j in xrange(len(Gout.gru_data[0]) - 1):  # q points
+            #for j in xrange(len(Gout.gru_data[0]) - 1):  # q points
+
+            for j in xrange(len(Gout.phonons[X]) - 1):
 
                 ### FOR PHONON BANDS DISPERSIONS
                 if bands_true == 1:
 
-                    if len(Gout.gru_data[X][j]) > 1:
-                        for i in xrange(1, len(Gout.gru_data[X][j])):  # 3N modes
+                    #if len(Gout.gru_data[X][j]) > 1:
+                        #for i in xrange(1, len(Gout.phonons[X][j])):  # 3N modes
+                        for i in xrange(3*Gin.nat):
+                            data_line = {'prefix': Gout.prefix,
+                                         'calculation': Gout.calc[X],
+                                         'volume': Gout.V[X],
+                                         'q': Gout.phonons[X][j]['cartQ'],
+                                         'reducedPath': Gout.phonons[X][j]['reducedQ'],
+                                         'mode': i+1,
+                                         'omega': Gout.phonons[X][j]['%s'%(i+1)]
+
+                            }
+
+                            data_line['modeType'] = "O"
+                            if data_line['mode'] in Gout.acoustic:
+                                data_line['modeType'] = "A"
 
 
-                            data_line = {'prefix': '%s' % Gout.prefix,
-                                         'Calculation': '%s' % Gin.dir[X],
-                                         'Volume': '%s' % Gin.V[X],
-                                         'q': '%s' % Gout.gru_data[X][j][0],
-                                         'Mode_Index': '%s' % Gout.mode_index[i][j],
-                                         'Omega': '%s' % Gout.gru_data[X][j][i],
-                                         'Group_Velocity': '%s' % Gout.group_velocity[X][j][i]
-
-                                        }
-
-                            data_line['Mode_Type'] = "O"
-                            for k in range(len(Gout.acoustic_i)):
-                                if int(Gout.acoustic_i[k]) == int(Gout.mode_index[i][j]):
-                                    data_line['Mode_Type'] = "A"
-                                    break
 
                             l = json.dumps(data_line)
                             file.write(l)
                             file.write("\n")
-
+                            '''
                             #for i in xrange(1, len(Gout.gru_data[X][j]) ):
                         #	data_line['Omega'].append('%s'%Gout.gru_data[X][j][i])
                         #	data_line['Mode_Index'].append('%s'%Gout.mode_index[X][j][i])
@@ -147,13 +148,25 @@ def WriteGrupyFile(Gout, Gin, bands_true):
                         l = json.dumps(data_line)
                         file.write(l)
                         file.write("\n")
+                        '''
 
                 ### FOR GRUNEISEN PARAMETER
                 else:
-                    #print num
-                    #print Gout.omega_eq
-                    for i in xrange(1, len(Gout.gru_data)):  # 3N modes
 
+                    for i in xrange(3*Gin.nat):  # 3N modes
+
+                        data_line = {'prefix': Gout.prefix,
+                                     'calculation': Gout.calc[X],
+                                     'volume': Gout.V[X],
+                                     'q': Gout.gruneisen[j]['cartQ'],
+                                     'reducedPath': Gout.gruneisen[j]['reducedQ'],
+                                     'mode': i+1,
+                                     'Gruneisen': Gout.gruneisen[j]['Gruneisen']['%s'%(i+1)]
+
+                        }
+
+
+                        '''
                         data_line = {'prefix': '%s' % Gout.prefix,
                                      'Volume': None,
                                      'q': '%s' % Gout.gru_data[0][j],
@@ -166,6 +179,11 @@ def WriteGrupyFile(Gout, Gin, bands_true):
                             if int(Gout.acoustic_i[k]) == int(Gout.mode_index[i][j]):
                                 data_line['Mode_Type'] = "A"
                                 break
+                        '''
+                        data_line['modeType'] = "O"
+                        if data_line['mode'] in Gout.acoustic:
+                            data_line['modeType'] = "A"
+
 
                         if not Gin.path:
                             data_line['Omega_eq']= '%s' %Gout.omega_eq[j][i]

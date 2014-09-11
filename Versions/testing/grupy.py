@@ -14,7 +14,7 @@ import subprocess as sub
 
 
 # Welcome to grupy!
-print "\n!-----------   grupy! version 1.2.1   -----------!\n"
+print "\n!-----------   grupy! version 1.3   -----------!\n"
 
 
 # should eventually write some flags for bad data input
@@ -88,36 +88,51 @@ if options.run_scripts:
 
 if Gin.path:
     ## Generate the BZ path and corresponding high symmetry labels
-    Gin.BZ_path, BZ_labels = MakeBZPath(Gin.hs_points, Gin.path)
+    Gin.BZ_path, Gin.BZ_labels = MakeBZPath(Gin.hs_points, Gin.path)
 
-omega = ReadModes(Gin.nat, Gin.m, Gin.dir)
-Gruneisen(omega, Gin.V)
+omega = ReadModes(Gin.nat, Gin.m, Gin.dir, units)
+
+
+
 '''
 ## Get the data from QE output text files
 q, Darray = ReadDynMat(Gin.nat, Gin.m, Gin.dir)
 
-
-
 ## Format the data to be written to a formatted output file
 Gin.q, gru_data, mode_index, omega_eq, acoustic = GruCalc(Gin, q, Darray)
+'''
 
 
-# noinspection PyInterpreter
+# Gruneisen
 if not options.bands and not options.avg:
+
+    # Make a copy of the frequency dictionary so that two routes can use it
+    import copy
+    p = copy.deepcopy(omega)
+
+    # Get mode Gruneisens, q points, and reduced path (also get phonons for acoustic mode finding)
+    phonons = Phonons(p, Gin.BZ_path, Gin.path)
+    gruneisen = Gruneisen(omega, Gin.V, Gin.BZ_path, Gin.path, Gin.nat)
+
     if Gin.path:
-        Gout = grupy_out(Gin.prefix, BZ_labels, gru_data, mode_index, None, omega_eq, acoustic,units)
+        #Gout = grupy_out(Gin.prefix, BZ_labels, gru_data, mode_index, None, omega_eq, acoustic,units)
+        Gout = GrupyOut(Gin)
+        Gout.Gruneisen(phonons, gruneisen)
+        Gout.units = units
+    #else:
+    #    bands = GetBands(Gin, units)
 
-    else:
-        bands = GetBands(Gin, units)
-
-        Gout = grupy_out(Gin.prefix, None, gru_data, mode_index, None, bands[0], acoustic, units)
+    #    Gout = grupy_out(Gin.prefix, None, gru_data, mode_index, None, bands[0], acoustic, units)
     WriteGrupyFile(Gout, Gin, 0)
     print "\ngrupy.out file written\n"
 
 
 
-### need to feed in new BZ_path
+# Phonon dispersion
 if options.bands:
+
+    # Get the frequencies, q points, and reduced path
+    phonons = Phonons(omega, Gin.BZ_path, Gin.path)
 
     if options.single:
         # Match a variable in Gin.dir list with the directory supplied with the -s option
@@ -133,23 +148,27 @@ if options.bands:
         #Recreate lists of single items for Gin variables
         Gin.dir = [Gin.dir[index]]
         Gin.V = [Gin.V[index]]
+        phonons = [phonons[index]]
+
+    # This will be depreciated soon but keeping it for now
+    #bands = GetBands(Gin, options.cm)
+    #group_velocity = GetGroupVelocity(bands)
 
 
-
-
-    bands = GetBands(Gin, options.cm)
-
-    group_velocity = GetGroupVelocity(bands)
     if Gin.path:
-        Gout = grupy_out(Gin.prefix, BZ_labels, bands, mode_index, group_velocity, None, acoustic,units)
-    else:
-        Gout = grupy_out(Gin.prefix, None, bands, mode_index, group_velocity, None, acoustic,units)
+    #    Gout = grupy_out(Gin.prefix, BZ_labels, bands, mode_index, group_velocity, None, acoustic,units)
+        Gout = GrupyOut(Gin)
+        Gout.Phonons(phonons)
+        Gout.units = units
+
+    #else:
+    #    Gout = grupy_out(Gin.prefix, None, bands, mode_index, group_velocity, None, acoustic,units)
 
 
     WriteGrupyFile(Gout, Gin, 1)
     print "\ngrupy.bands.out file written\n"
 
-
+'''
 ## Calculate the average Grunesien parameter AFTER writing appropriate grupy.out file
 if options.avg:
     print "Material: %s"%Gin.prefix

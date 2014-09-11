@@ -19,24 +19,31 @@ def SortModes(vec,val,evec,nat):
     for i in range(3*nat):
         tmpDot = 0.0
         tmpMode = 0
+        dottedModes = []
         for j in range(3*nat):
 
             # numpy.vdot is used for complex vectors (numpy.dot won't give the proper Kroneker products here)
-            d = np.absolute(np.vdot(np.array(vec[i]), np.array(evec['%s'%(j+1)]).T))
+            d = np.abs(np.vdot(np.array(vec[i]), np.array(evec['%s'%(j+1)]).T))
+
 
             if d > tmpDot:
-                if '%s'%(j+1) not in evals:
-                    #print evals.keys(), j+1
+                if '%s'%(j+1) not in evals and (j+1) not in dottedModes:
                     evals['%s'%(j+1)] = val[i]
 
-    #if len(evals)<3*nat:
-        #print evals
+                    tmpDot = d
+                    dottedModes.append(tmpMode)
+
+
     return dict(sorted(evals.items()))
 
 
-def ReadModes(nat, amass, dir):
-    # Note: QE produces atomic masses in a weird unit
-    # They are first extracted from prefix.dyn1
+def ReadModes(nat, amass, dir, units):
+    c=1
+    # Units are in THZ. Multiple by a constant to get cm-1 or some other units
+    if units == "thz":
+        c = 1
+    elif units =="cm-1":
+        c = 33.35649629
 
 
     eval = []  # Eigenvalues
@@ -55,7 +62,9 @@ def ReadModes(nat, amass, dir):
         incount = 0
         q = []
         eval.append([])
-        evec = {} # Just the first eigenvector. More will be built and dotted to sort modes.
+        evec = {} # The previous eigenvector. Used to sort modes.
+        # NOTE: because of numerical noise, you cannot dot every new eigenvector with the first one; you have
+        #   to dot it with the LAST eigenvector and make a new one for the next q point
 
         for file in os.listdir("%s/%s/" % (cwd, dir[x])):
 
@@ -81,17 +90,17 @@ def ReadModes(nat, amass, dir):
                         if tmpVec != None:
                             ev = BuildEvec(tmpVec)
                             vec.append(ev)
-                            if len(q)==1:
-                                evec['%s'%tmpMode] = ev
+                            #if len(q)==1:
+                            evec['%s'%tmpMode] = ev
 
 
                         s = line.split()
                         thz = s[3]
                         cm = s[6]
-                        val.append(thz)
+                        val.append(float(thz)*c)
                         tmp = i+1
-                        if len(q)==1:
-                            tmpMode = s[1][0]
+                        #if len(q)==1:
+                        tmpMode = s[1][0]
                         tmpVec = []
 
                     if i-tmp < nat and i+1-tmp>0 and tmp!=0:
@@ -103,8 +112,8 @@ def ReadModes(nat, amass, dir):
                         ev = BuildEvec(tmpVec)
                         vec.append(ev)
 
-                        if len(q)==1:
-                            evec['%s'%tmpMode] = ev
+                        #if len(q)==1:
+                        evec['%s'%tmpMode] = ev
                         #Check if this is the first evec. If so, put it in evec. If not, dot it w/ evec to sort modes
 
                         sorted = SortModes(vec,val,evec,nat)
