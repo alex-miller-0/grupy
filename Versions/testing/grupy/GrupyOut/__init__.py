@@ -26,10 +26,11 @@ class GrupyOut:
                 if ph[i][j]['cartQ'] == [0,0,0]:
                     for key in ph[i][j].keys():
                         if len(str(key)) == 1:
-                            if float(ph[i][j][key]) == 0:
+                            if round(float(ph[i][j][key]),7) == 0:
                                 if int(key) not in acoustic[i]:
                                     acoustic[i].append(int(key))
         self.acoustic = acoustic
+
 
     def Phonons(self,ph):
         self.GetAcousticModes(ph)
