@@ -13,19 +13,7 @@ from optparse import OptionParser
 import subprocess as sub
 
 
-# Welcome to grupy!
-print "\n!-----------   grupy! version 1.3   -----------!\n"
-
-
-# should eventually write some flags for bad data input
-## From input file
-##################
-
-dir, in_path, temps = GetInput()
-
-
-## Parse options to graph data and to make/run q2r.in and matdyn.in scripts 
-###########################################################################
+# Parse options to graph data and to make/run q2r.in and matdyn.in scripts
 
 parser = OptionParser()
 parser.set_defaults(
@@ -50,27 +38,24 @@ if options.cm == True:
     units = "cm-1"
 
 
-#### grupy_in object
-####################
-Gin = grupy_in(dir, in_path, None, None, None, None, None, None, None, None, None)
-Gin.prefix, Gin.V, Gin.m, Gin.nat = XMLparse(Gin.dir)
 
-if Gin.in_path:
-    Gin.path, Gin.hs_points = MakePath(Gin.in_path)
-else:
-    "No path selected: I will calculate average Gruneisen parameter."
+# Grupy
 
-# Old ways of getting these; think I will delete soon
-#Gin.prefix = GetPrefix(Gin.dir)
-#(Gin.nat, Gin.V, Gin.m) = GetNat_M_V(Gin.dir, Gin.prefix)
+# Welcome to grupy!
+print "\n!-----------   grupy! version 1.3   -----------!\n"
 
+# Generate the input object
+Gin = GrupyIn()
+Gin.GrupyInput()
+
+# grupy --make
 if options.make_scripts:
     MakeMatdyn(Gin.dir, Gin.prefix, Gin.path, Gin.m)
     MakeQ2r(Gin.prefix, Gin.dir)
     print "\nq2r.in and matdyn.in files created\n"
     sys.exit()
 
-# this doesn't work - I need to write a shell script
+# grupy --run
 if options.run_scripts:
 
     for i in range(len(Gin.dir)):
@@ -84,24 +69,8 @@ if options.run_scripts:
     sys.exit()
 
 
-
-
-if Gin.path:
-    ## Generate the BZ path and corresponding high symmetry labels
-    Gin.BZ_path, Gin.BZ_labels = MakeBZPath(Gin.hs_points, Gin.path)
-
+# grupy
 omega = ReadModes(Gin.nat, Gin.m, Gin.dir, units)
-
-
-
-'''
-## Get the data from QE output text files
-q, Darray = ReadDynMat(Gin.nat, Gin.m, Gin.dir)
-
-## Format the data to be written to a formatted output file
-Gin.q, gru_data, mode_index, omega_eq, acoustic = GruCalc(Gin, q, Darray)
-'''
-
 
 # Gruneisen
 if not options.bands and not options.avg:
@@ -115,14 +84,12 @@ if not options.bands and not options.avg:
     gruneisen = Gruneisen(omega, Gin.V, Gin.BZ_path, Gin.path, Gin.nat)
 
     if Gin.path:
-        #Gout = grupy_out(Gin.prefix, BZ_labels, gru_data, mode_index, None, omega_eq, acoustic,units)
         Gout = GrupyOut(Gin)
         Gout.Gruneisen(phonons, gruneisen)
         Gout.units = units
     #else:
     #    bands = GetBands(Gin, units)
 
-    #    Gout = grupy_out(Gin.prefix, None, gru_data, mode_index, None, bands[0], acoustic, units)
     WriteGrupyFile(Gout, Gin, 0)
     print "\ngrupy.out file written\n"
 
@@ -150,13 +117,8 @@ if options.bands:
         Gin.V = [Gin.V[index]]
         phonons = [phonons[index]]
 
-    # This will be depreciated soon but keeping it for now
-    #bands = GetBands(Gin, options.cm)
-    #group_velocity = GetGroupVelocity(bands)
-
-
     if Gin.path:
-    #    Gout = grupy_out(Gin.prefix, BZ_labels, bands, mode_index, group_velocity, None, acoustic,units)
+
         Gout = GrupyOut(Gin)
         Gout.Phonons(phonons)
         Gout.units = units
@@ -168,7 +130,7 @@ if options.bands:
     WriteGrupyFile(Gout, Gin, 1)
     print "\ngrupy.bands.out file written\n"
 
-'''
+
 ## Calculate the average Grunesien parameter AFTER writing appropriate grupy.out file
 if options.avg:
     print "Material: %s"%Gin.prefix
@@ -181,4 +143,3 @@ if options.avg:
         print "Average Gruneisen parameter:  ",gru_avg[i]['average Gruneisen']
         print ""
     print "----------------------------------"
-'''

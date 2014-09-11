@@ -1,9 +1,6 @@
 from grupy_IO import *
-from GruCalc import *
 from GruPlot import *
-from Bands import *
-from MakeBZPath import *
+#from MakeBZPath import *
 from Gruneisen import *
-
-from grupy_in import *
-from grupy_out import *
+from GrupyIn import GrupyIn
+from GrupyOut import GrupyOut
