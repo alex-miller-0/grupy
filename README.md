@@ -16,17 +16,18 @@ This module is capable of calculating and plotting the Gruneisen parameter for a
 ###Mode Gruneisen parameter:
 This dimensionless value is defined as:
 
-https://cloud.githubusercontent.com/assets/7378490/6604303/886bd7b8-c7f5-11e4-83c9-87d393149a41.png
+![Alt text](https://cloud.githubusercontent.com/assets/7378490/6604303/886bd7b8-c7f5-11e4-83c9-87d393149a41.png)
 
 Where ω is the frequency of the phonon mode in question (i.e. the square root of the eigenvalue of the dynamical matrix) and V is the lattice volume corresponding to a particular dynamical matrix.
 
 ###Average Gruneisen parameter:
 This is the average of mode Gruneisen parameters, weighted by their contribution to specific heat of the crystal. By treating crystals as Einstein solids, the average Gruneisen parameter at a given temperature can be modeled as:
-!,!{𝛾!,! ∗ 𝑐!,!,!} !,! 𝑐!,!
-,!
+
+![Alt text](https://cloud.githubusercontent.com/assets/7378490/6604374/e2b5fde8-c7f5-11e4-87f2-9cfbb08d6637.png)
+
 Where cv,q,n is the contribution to specific heat of a given branch (n) at a given point in reciprocal space (q, i.e. in the 1st Brillouin Zone):
 
-𝑐!,!,! = 𝑘! ∗ exp 𝑥 ; 𝑥 = ħ𝜔!,! !,! exp𝑥 −1! 𝑘!𝑇
+![Alt text](https://cloud.githubusercontent.com/assets/7378490/6604380/e6da95e6-c7f5-11e4-878c-8576645a0b71.png)�
 
 
 ##Grupy installation:
