@@ -30,7 +30,8 @@ Where cv,q,n is the contribution to specific heat of a given branch (n) at a giv
 ##Grupy installation:
 1) Install python, numpy, and matplotlib
 2) Change to the directory containing setup.py.￼￼￼￼
-3) Run 'python setup.py install'
+3) Run
+''' 'python setup.py install' '''
 
 Note: if you wish to install grupy to a particular directory (i.e. not
 the default Python directory) use the flag:
