@@ -31,12 +31,13 @@ Where cv,q,n is the contribution to specific heat of a given branch (n) at a giv
 1) Install python, numpy, and matplotlib
 2) Change to the directory containing setup.py.￼￼￼￼
 3) Run
-''' 'python setup.py install' '''
+
+        python setup.py install
 
 Note: if you wish to install grupy to a particular directory (i.e. not
 the default Python directory) use the flag:
 
---prefix=”path_to_directory"
+        python setup.py install --prefix="path_to_directory"
 
 
 ##Before use:
@@ -52,12 +53,10 @@ Place the three calculations in one directory with the following structure:
 
 ##Using grupy:
 
-1) Write a file named grupy.in with the following text flags and place it in the parent
+####1) Write a file named grupy.in with the following text flags and place it in the parent
 directory shown above:
 
 a) **DIRS:** names of folders containing calculations with spaces between the names
-
-e.g.) DIRS 1.00 0.99 1.01
 
 Note: the format must be equilibrium then smaller then larger volume. The names must be separated by spaces only.
 
@@ -65,46 +64,59 @@ b) **PATH** symmetry point 1  q-vector 1   symmetry point 2  q-vector 2  ... sym
 
 Note: PATH does not have an equal sign. Also note that Quantum Espresso reads high symmetry points in terms of conventional basis vectors (see: Bilbao Crystallographic Server, www.cryst.ehu.es/).
 
-e.g.)PATH G000 X010 W0.510
+e.g.)
 
-2) Now you are all set up. Assuming you have the grupy scripts directory (i.e. the one containing grupy and gruplot) in your shell's $PATH, run the following:
+        DIRS 1.00 0.99 1.01
+        PATH G 0 0 0  X 0 1 0  W 0.5 1 0
+
+
+
+####2) Now you are all set up. Assuming you have the grupy scripts directory (i.e. the one containing grupy and gruplot) in your shell's $PATH, run the following:
 
 a) Make the q2r.x and dynmat.x scripts for each calculation (files will be named q2r.in and matdyn.in, respectively):
 
-**grupy --make**
+        grupy --make
 
 b) Run those scripts automatically using the Quantum Espresso executables mentioned above:
 
-**grupy --run**
+        grupy --run
 
 Note: You should watch for errors when these scripts are running!
 
 c) Run grupy:
 
-**grupy**
+        grupy
 
 This will create a file called prefix.grupy.out, where prefix is the name of your material (i.e. whatever your Quantum Espresso prefix is). This contains a dispersion of Gruneisen parameter along the path specified in grupy.in for each mode in your material. Remember that this is a dimensionless variable.
 
 Note: the output of these files is JSON format.
 
-d) As an alternative to part c: **grupy --bands**
+d) As an alternative to part c:
 
-will create a file called <i>prefix.grupy.bands.out</i>, which contains the phonon dispersion for each of the three calculations you performed. Note that frequency (ω) is plotted (i.e. the square root of the eigenvalue of the dynamical matrix) and these are plotted in THz. Options for other units may follow in coming versions.
-You may also choose to process data from a single phonon dispersion without wishing to calculate dispersions for two other volumes. This can be done with:
+        grupy --bands
 
-grupy --bands -s name_of_calculation
+will create a file called **prefix.grupy.bands.out**, which contains the phonon dispersion for each of the three calculations you performed. Note that frequency (ω) is plotted (i.e. the square root of the eigenvalue of the dynamical matrix) and these are plotted in THz. Options for other units may follow in coming versions.
+
+You may also choose to process data from a single phonon dispersion without calculating dispersions for two other volumes. This can be done with:
+
+        grupy --bands -s name_of_calculation
 
 e) If you are calculating the average Gruneisen parameter, a uniform k-point grid must be generated in lieu of the path around the Brillouin Zone. To allow this, you must not specify a PATH variable in the grupy.in file. Instead, you must include a “TEMPS” variable, followed by a list of temperatures (separated by spaces) at which you would like to calculate the average Gruneisen parameter (and also Cv). Perform steps a-c and then type the following command once you have generated a grupy.out file:
 
-grupy --avg
+        grupy --avg
 
-3) The next step is to plot the Gruneisen dispersion or the regular phonon dispersion. This will be done using python's matplotlib library. If you are running this program on a remote server, make sure you have plotting capability (e.g. running X11 via ssh -Y yourusername@yourserver )
+####3) The next step is to plot the Gruneisen dispersion or the regular phonon dispersion. This will be done using python's matplotlib library. 
+
+If you are running this program on a remote server, make sure you have plotting capability (e.g. running X11 via ssh -Y yourusername@yourserver )
 
 Again, you will need to be in the parent folder. Once you are there... a) Plot Gruneisen dispersion (i.e. using all three calculations):
 
-**gruplot**
+        gruplot
 
-b) Plot a particular phonon dispersion: gruplot --bands name_of_calculation
+b) Plot a particular phonon dispersion: 
+
+        gruplot --bands name_of_calculation
+
 For example, if you label your three folders 1.00, 0.99, 1.01 and you want to plot the equilibrium bands plot:
 gruplot --bands 1.00
 
