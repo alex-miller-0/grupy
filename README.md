@@ -1,14 +1,16 @@
 #grupy
 Written by Alex Miller in 2014 at the University of Texas at Austin
-##Theoretical Overview:
-This module is capable of calculating and plotting the Gruneisen parameter for a given material across a dispersion of q-points (i.e. the Brillouin zone). This is a post-processing program that requires phonon dispersion calculations to first be performed using Quantum Espresso (http://www.quantum-espresso.org/). This module is written in Python and requires numpy and matplotlib libraries.
 
-###Mode Gruneisen parameter:
-This dimensionless value is defined as:
+This module is capable of calculating and plotting the Gruneisen parameter for a given material across a dispersion of q-points (i.e. in reciprocal space). This is a post-processing program that requires phonon dispersion calculations to first be performed using Quantum Espresso (http://www.quantum-espresso.org/). This module is written in Python and requires numpy and matplotlib libraries.
+##Theoretical Overview:
+The Gruneisen parameter is a metric used to quantify the change in phonon mode frequency (i.e. vibrational patterns of atoms in a crystal) with respect to a change in volume. This can be used to analyze heat transfer properties in a material across a temperature gradient, as volume is directly proportional to temperature. I used this module in my research to study materials exhibiting the thermoelectric effect.
+
+####Mode Gruneisen parameter:
+This dimensionless value is defined simply as:
 
 ![Alt text](https://cloud.githubusercontent.com/assets/7378490/6604303/886bd7b8-c7f5-11e4-83c9-87d393149a41.png)
 
-Where ω is the frequency of the phonon mode in question (i.e. the square root of the eigenvalue of the dynamical matrix) and V is the lattice volume corresponding to a particular dynamical matrix.
+Where ω is the frequency of the phonon mode in question (i.e. the square root of the eigenvalue of the dynamical matrix) and V is the lattice volume corresponding to a particular dynamical matrix. For more information on the dynamical matrix and lattice dynamics in general, see http://www.phys.lsu.edu/~jarrell/COURSES/SOLID_STATE/Chap4/chap4.pdf
 
 ###Average Gruneisen parameter:
 This is the average of mode Gruneisen parameters, weighted by their contribution to specific heat of the crystal. By treating crystals as Einstein solids, the average Gruneisen parameter at a given temperature can be modeled as:
