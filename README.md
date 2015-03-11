@@ -15,7 +15,9 @@ This module is capable of calculating and plotting the Gruneisen parameter for a
 
 ###Mode Gruneisen parameter:
 This dimensionless value is defined as:
-𝛾 = ∂ ln (𝜔) 𝜕 ln (𝑉)
+
+https://cloud.githubusercontent.com/assets/7378490/6604303/886bd7b8-c7f5-11e4-83c9-87d393149a41.png
+
 Where ω is the frequency of the phonon mode in question (i.e. the square root of the eigenvalue of the dynamical matrix) and V is the lattice volume corresponding to a particular dynamical matrix.
 
 ###Average Gruneisen parameter:
