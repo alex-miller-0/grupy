@@ -23,8 +23,11 @@ Where cv,q,n is the contribution to specific heat of a given branch (n) at a giv
 
 
 ##Grupy installation:
+
 1) Install python, numpy, and matplotlib
+
 2) Change to the directory containing setup.py.￼￼￼￼
+
 3) Run
 
         python setup.py install
@@ -45,17 +48,19 @@ Place the three calculations in one directory with the following structure
 
         parent directory-- |--- directory with equilibrium volume calculation
 
-                           |--- directory larger volume calculation
+                           |--- directory with larger volume calculation
 
 ##Using grupy:
 
+###Processing:
+
 #####1) Write a file named grupy.in with the following text flags and place it in the parent directory shown above:
 
-a) **DIRS:** names of folders containing calculations with spaces between the names
+a) *DIRS:* names of folders containing calculations with spaces between the names
 
 Note: the format must be equilibrium then smaller then larger volume. The names must be separated by spaces only.
 
-b) **PATH** symmetry point 1  q-vector 1   symmetry point 2  q-vector 2  ... symmetry point n  q-vector n
+b) *PATH* symmetry point 1  q-vector 1   symmetry point 2  q-vector 2  ... symmetry point n  q-vector n
 
 Note: PATH does not have an equal sign. Also note that Quantum Espresso reads high symmetry points in terms of conventional basis vectors (see: Bilbao Crystallographic Server, www.cryst.ehu.es/).
 
@@ -68,7 +73,9 @@ e.g.)
 
 
 
-####2) Now you are all set up. Assuming you have the grupy scripts directory (i.e. the one containing grupy and gruplot) in your shell's $PATH, run the following:
+#####2) Make sure the grupy/scripts directory (i.e. the one containing grupy and gruplot) in your shell's $PATH
+
+#####3) Run the following:
 
 a) Make the q2r.x and dynmat.x scripts for each calculation (files will be named q2r.in and matdyn.in, respectively):
 
@@ -102,11 +109,13 @@ e) If you are calculating the average Gruneisen parameter, a uniform k-point gri
 
         grupy --avg
 
-####3) The next step is to plot the Gruneisen dispersion or the regular phonon dispersion. This will be done using python's matplotlib library. 
+### Plotting:
 
 If you are running this program on a remote server, make sure you have plotting capability (e.g. running X11 via ssh -Y yourusername@yourserver )
 
-Again, you will need to be in the parent folder. Once you are there... a) Plot Gruneisen dispersion (i.e. using all three calculations):
+Again, you will need to be in the parent folder. Once you are there...
+
+a) Plot Gruneisen dispersion (i.e. using all three calculations):
 
         gruplot
 
@@ -115,6 +124,7 @@ b) Plot a particular phonon dispersion:
         gruplot --bands name_of_calculation
 
 For example, if you label your three folders 1.00, 0.99, 1.01 and you want to plot the equilibrium bands plot:
+
 gruplot --bands 1.00
 
 
