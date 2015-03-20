@@ -43,8 +43,7 @@ def ReadDynMat(nat, amass, dir):
 
                 for i, line in enumerate(f):
 
-                    if "q" in line and "=" in line:
-
+                    if "q = (" in line:
                         qcount += 1
                         start = i + 2
                         end = i + 2 + (4 * nat * nat)
@@ -54,8 +53,6 @@ def ReadDynMat(nat, amass, dir):
                         temp = line.split()
 
                         q.append([temp[3], temp[4], temp[5]])
-
-
 
                     if start <= i and i <= end and start != 0 and end != 0:
 

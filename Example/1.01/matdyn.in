@@ -1,7 +1,7 @@
 &input
 amass(1)= 207.2d0,
 amass(2)= 127.6d0,
-flfrc='PbTe.fc', flfrq='PbTe.freq' fldyn='PbTe.dynmat' 
+flfrc='PbTe.fc', flfrq='PbTe.freq', asr='crystal' fldyn='PbTe.dynmat' 
 /
 401
 0.0	0.0	0.0	

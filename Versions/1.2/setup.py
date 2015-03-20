@@ -9,7 +9,8 @@ setup(name='grupy',
 	  author='Alex Miller',
 	  author_email='asmiller1989@gmail.com',
 	  url='n/a',
-	  packages=['grupy'],
+	  packages=['grupy', 'grupy.gruplot', 'grupy.grupy_in', 
+	  	'grupy.grupy_out', 'grupy.qe', 'grupy.velocity'],
 	  scripts=['scripts/grupy', 'scripts/gruplot'],
 	  
 	  )

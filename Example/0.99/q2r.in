@@ -1,2 +1,2 @@
 &input
- fildyn='PbTe.dyn', flfrc='PbTe.fc'/
+ fildyn='PbTe.dyn', flfrc='PbTe.fc', zasr='crystal'/

@@ -3,8 +3,7 @@ import numpy
 import os
 
 
-def GetBands(Gin, cm):
-    print cm
+def GetBands(Gin):
     nat = Gin.nat
     amass = Gin.m
     dir = Gin.dir
@@ -31,14 +30,12 @@ def GetBands(Gin, cm):
                 else:
                     # these don't need to be sorted
                     if eval[k - 1] > 0:
-                        omega = (eval[k - 1]) ** 0.5 * 3.289841973e3#*33.35649629
+                        omega = (eval[k - 1]) ** 0.5 * 3.289841973e3  #*33.35649629
                     if eval[k - 1] < 0:
                         omega = ( -(-eval[k - 1]) ** 0.5 * 3.289841973e3)  # *33.35649629 )
                     if eval[k - 1] == 0:
                         omega = 0
 
-                    if cm==True:
-                        omega*=33.35641
                     bands[i][j].append(omega)
 
     return bands
