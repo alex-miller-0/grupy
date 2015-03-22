@@ -123,9 +123,9 @@ b) Plot a particular phonon dispersion:
 
         gruplot --bands name_of_calculation
 
-For example, if you label your three folders 1.00, 0.99, 1.01 and you want to plot the equilibrium bands plot:
+For example, if you label your three folders 1.00, 0.99, 1.01 and you want to plot the equilibrium bands plot: 
 
-gruplot --bands 1.00
+*gruplot --bands 1.00*
 
 
 
@@ -139,4 +139,6 @@ gruplot --bands 1.00
 
 1.1.3: Implemented the acoustic sum rule (ASR) via q2r.in and matdyn.in files. These parameters are set to ‘crystal’.
 
-1.1.4: Added support for calculating the average Gruneisen parameter of the material. 1.2: Cleaned up output of average Gruneisen.
+1.1.4: Added support for calculating the average Gruneisen parameter of the material. 
+
+1.2: Cleaned up output of average Gruneisen.
