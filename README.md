@@ -17,7 +17,7 @@ This is the average of mode Gruneisen parameters, weighted by their contribution
 
 ![Alt text](https://cloud.githubusercontent.com/assets/7378490/6604374/e2b5fde8-c7f5-11e4-87f2-9cfbb08d6637.png)
 
-Where cv,q,n is the contribution to specific heat of a given branch (n) at a given point in reciprocal space (q, i.e. in the 1st Brillouin Zone):
+Where cv,q,n is the contribution to specific heat (cv) of a given branch (n) at a given point in reciprocal space (q, i.e. a vector in the 1st Brillouin Zone):
 
 ![Alt text](https://cloud.githubusercontent.com/assets/7378490/6604380/e6da95e6-c7f5-11e4-878c-8576645a0b71.png)�
 
